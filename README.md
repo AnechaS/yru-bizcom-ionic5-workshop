@@ -1,1 +1,1 @@
-# Step-1: การติดตั้ง และ Build APK
+# Step2 Ionic Components

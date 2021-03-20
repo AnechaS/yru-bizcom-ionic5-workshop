@@ -1,27 +1,13 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+.my-text {
+  color: aquamarine;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.my-text-desc {
+  color: var(--ion-color-primary)
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+:root {
+  --ion-safe-area-top: 20px;
+  --ion-safe-area-bottom: 22px;
 }
 
-#container a {
-  text-decoration: none;
-}
