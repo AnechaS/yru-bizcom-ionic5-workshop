@@ -5,15 +5,26 @@
 </ion-header>
 
 <ion-content [fullscreen]="true" class="ion-padding">
-  <h3>Capacitor plugins example</h3>
-  <p>1. Device Info</p>
-  <pre>{{ deviceInfo | json }}</pre>
-  <p>2. Camara</p>
-  <button ionic-button (click)="takePicture()">Take Photo</button>
-  <img *ngIf="imageUrl" [src]="imageUrl" />
+  <ion-text color="secondary">
+    <h3>#Capacitor plugins example</h3>
+  </ion-text>
 
-  <h3>Cordova plugin example</h3>
-  <p>1. App Version</p>
+  <!-- <h4>1. Device Info</h4>
+  <p>platform: {{ deviceInfo.platform }}</p>
+  <p>app name: {{ deviceInfo.appName }}</p>
+  <p>app info:</p>
+  <pre>{{ deviceInfo | json }}</pre> -->
+
+  <h4>2. Camara</h4>
+  <ion-button (click)="takePicture()">Take Photo</ion-button>
+  <br />
+  <ion-img *ngIf="imageUrl" [src]="imageUrl"></ion-img>
+
+  <!-- <ion-text color="secondary">
+    <h3>#Cordova plugin example</h3>
+  </ion-text>
+
+  <h4>1. App Version</h4>
   <p>app name: {{ name }}</p>
-  <p>app version: {{ version  }}</p>
+  <p>app version: {{ version }}</p> -->
 </ion-content>
