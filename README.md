@@ -1,1 +1,1 @@
-# ionic-workshop
+# Step-1: การติดตั้ง และ Build APK
