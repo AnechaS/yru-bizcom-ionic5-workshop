@@ -1,0 +1,20 @@
+.mybox {
+  border: 1px solid;
+  padding: 10px;
+}
+
+.mybox-body {
+  border: 1px dashed;
+}
+
+.text-color-success {
+  color: green;
+}
+
+#d3 {
+  color: #3f51b5;
+}
+
+h4 {
+  color: rgb(204, 153, 255);
+}

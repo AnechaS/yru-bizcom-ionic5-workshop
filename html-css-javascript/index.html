@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- เรียกใช้งาน css ใน html -->
+    <!-- <style>
+      /* syntax css */
+      /* [selector] {
+            property: value;
+         } 
+      */
+
+      .mybox {
+        border: 1px solid;
+        padding: 10px;
+      }
+
+      .mybox-body {
+        border: 1px dashed;
+      }
+
+      .text-color-success {
+        color: green;
+      }
+
+      #d3 {
+        color: #3f51b5;
+      }
+
+      h4 {
+        color: rgb(204, 153, 255);
+      }
+    </style> -->
+
+    <!-- เรียกใช้งาน css จากไฟล์ .css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h2>1. Text Headers (ข้อความหัวข้อ)</h2>
+    <hr />
+    <h1 style="color: cadetblue;">Dispay 1</h1>
+    <h2 class="text-color-success">Dispay 2</h2>
+    <h3 id="d3">Dispay 3</h3>
+    <h4>Dispay 4</h4>
+    <h5>Dispay 1</h5>
+    <hr />
+
+    <h2>2. Text (ข้อความ)</h2>
+    <hr />
+    <p>
+      Lorem <b>ipsum</b> <i>dolor</i> <u>sit</u> amet consectetur adipisicing
+      elit. Distinctio ab iure temporibus quod numquam! Necessitatibus ipsa quae
+      nobis repudiandae nesciunt unde, ab iure rem ratione saepe odit quaerat
+      ipsum placeat.
+    </p>
+    <hr />
+
+    <h2>3. Link (ข้อความลิงก์)</h2>
+    <hr />
+    <a href="google.com">Google</a>
+    <hr />
+
+    <h2>4. Inputs (ตัวรับข้อมูล)</h2>
+    <hr />
+    <!-- text input -->
+    <label for="name">name: </label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" />
+
+    <!-- selections -->
+    <br />
+    <label for="language">language: </label>
+    <select id="language" name="language">
+      <option>JavaScript</option>
+      <option>Python</option>
+      <option>C++</option>
+    </select>
+
+    <!-- checkbox -->
+    <br />
+    colors:
+    <input type="checkbox" id="red" name="color" value="red" />
+    <label for="red">red</label>
+    <input type="checkbox" id="black" name="color" value="black" />
+    <label for="black">black</label>
+
+    <!-- radio -->
+    <br />
+    animals:
+    <input type="radio" id="cat" name="animal" value="cat" />
+    <label for="cat">cat</label>
+    <input type="radio" id="rat" name="animal" value="rat" />
+    <label for="rat">rat</label>
+
+    <!-- button -->
+    <br />
+    <button type="button">click me</button>
+    <hr />
+
+    <h2>5. Layout</h2>
+    <hr />
+
+    <div class="mybox">
+      <div class="mybox-body">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur,
+        sed aut assumenda eveniet optio quo quam nesciunt mollitia, repellat
+        autem cumque repudiandae perspiciatis ab ullam libero officia!
+        Provident, voluptate debitis!
+      </div>
+    </div>
+
+    <!-- เรียกใช้ javascript ใน html -->
+    <script>
+      console.log("Hello World!");
+    </script>
+
+    <!-- เรียกใช้ javascript จากไฟล์ .js -->
+    <script src="js/variables.js"></script>
+    <script src="js/operators.js"></script>
+    <script src="js/conditions.js"></script>
+    <script src="js/loops.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/object.js"></script>
+  </body>
+</html>
