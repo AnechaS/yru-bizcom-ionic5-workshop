@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/techs"></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>tech</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-icon [name]="'logo-' + tech.icon" [style.color]="tech.color" size="large"></ion-icon>
+  <p>{{ tech.description }}</p>
+</ion-content>
