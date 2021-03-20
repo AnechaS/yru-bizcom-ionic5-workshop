@@ -1,22 +1,19 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <!-- button slide menu -->
-    <!-- <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons> -->
     <ion-title> Home </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true" class="ion-padding">
-  <p>This is home screen.</p>
+  <h3>Capacitor plugins example</h3>
+  <p>1. Device Info</p>
+  <pre>{{ deviceInfo | json }}</pre>
+  <p>2. Camara</p>
+  <button ionic-button (click)="takePicture()">Take Photo</button>
+  <img *ngIf="imageUrl" [src]="imageUrl" />
 
-  <ion-button [routerLink]="['/techs']">Go to Techs screen</ion-button>
-  <ion-button (click)="goTechs()">Go to Techs screen with event button</ion-button>
-  <!-- <ion-button [routerLink]="['/techs', '2']">Go to techs/2</ion-button> -->
-
-  <br />
-
-  <ion-button [routerLink]="['/tabs']">Demo Tab Menu</ion-button>
-  <ion-button [routerLink]="['/slide']">Demo Slide Menu</ion-button>
+  <h3>Cordova plugin example</h3>
+  <p>1. App Version</p>
+  <p>app name: {{ name }}</p>
+  <p>app version: {{ version  }}</p>
 </ion-content>
