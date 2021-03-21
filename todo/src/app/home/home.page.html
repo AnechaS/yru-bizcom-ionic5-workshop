@@ -1,0 +1,75 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title> Todo List </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="container">
+    <div class="list">
+      <!-- begin: list -->
+      <ion-card *ngFor="let todo of todos" mode="md">
+        <ion-item-sliding>
+          <ion-item lines="none">
+            <ion-checkbox
+              mode="ios"
+              color="success"
+              slot="start"
+              [(ngModel)]="todo.completed"
+              (ionChange)="changeComplate(todo)"
+            ></ion-checkbox>
+            <ion-label>
+              <h2 [style.text-decoration]="todo.completed ? 'line-through': ''">
+                {{ todo.title }}
+              </h2>
+            </ion-label>
+          </ion-item>
+          <ion-item-options side="end">
+            <ion-item-option color="danger" (click)="deleteTodo(todo)">
+              <ion-icon name="trash" slot="icon-only"></ion-icon>
+            </ion-item-option>
+          </ion-item-options>
+        </ion-item-sliding>
+      </ion-card>
+      <!-- end: item -->
+
+      <!-- begin: item add todo -->
+      <ion-card *ngIf="isAdding">
+        <ion-item lines="none">
+          <ion-input [(ngModel)]="text" placeholder="Entrer item"></ion-input>
+          <ion-button shape="round" slot="end" (click)="addTodo()">
+            <ion-icon slot="icon-only" name="add"></ion-icon>
+          </ion-button>
+        </ion-item>
+      </ion-card>
+      <!-- end: item add todo -->
+    </div>
+
+    <div class="actions">
+      <!-- begin: button to show add item  -->
+      <ion-button
+        *ngIf="!isAdding"
+        (click)="toggleForm()"
+        expand="block"
+        class="btn-action"
+      >
+        <ion-icon name="add" slot="start"></ion-icon>
+        Add Item
+      </ion-button>
+      <!-- end: button to show add item  -->
+
+      <!-- begin: button to hide add item -->
+      <ion-button
+        *ngIf="isAdding"
+        (click)="toggleForm()"
+        color="danger"
+        expand="block"
+        class="btn-action"
+      >
+        <ion-icon name="close" slot="start"></ion-icon>
+        Cancle
+      </ion-button>
+      <!-- end: button to hide add item -->
+    </div>
+  </div>
+</ion-content>
