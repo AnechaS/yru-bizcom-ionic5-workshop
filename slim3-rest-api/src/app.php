@@ -72,6 +72,7 @@ $app = new App([
 ]);
 
 $app->add(new \App\Middlewares\TrailingSlash);
+$app->add(new \App\Middlewares\Cors);
 
 require 'dependencies.php';
 require 'routes.php';

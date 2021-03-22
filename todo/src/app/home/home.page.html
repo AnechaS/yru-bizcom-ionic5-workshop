@@ -5,13 +5,34 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <ion-refresher slot="fixed" (ionRefresh)="refresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
   <div class="container">
     <!-- begin: list -->
     <div class="list">
+      <!-- begin: card error -->
+      <ion-card *ngIf="errorMessage">
+        <ion-item lines="none" color="warning">
+          <ion-label>Error: {{ errorMessage }}</ion-label>
+          <ion-icon
+            name="close-outline"
+            slot="end"
+            (click)="clearErrorMessage()"
+          ></ion-icon>
+        </ion-item>
+      </ion-card>
+      <!-- end: card error -->
+
       <!-- begin: card item -->
       <ion-card *ngFor="let item of items; let i = index" mode="md">
         <ion-item-sliding>
-          <ion-item lines="none" button="true" (click)="changeComplate(i, item)">
+          <ion-item
+            lines="none"
+            button="true"
+            (click)="changeComplate(i, item)"
+          >
             <ion-icon
               *ngIf="!item.completed"
               name="radio-button-off-outline"
