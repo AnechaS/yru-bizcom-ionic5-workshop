@@ -1,0 +1,28 @@
+{
+    "name": "anecha/slim3-rest-api",
+    "description": "REST API with Slim3 PHP Framework",
+    "authors": [
+        {
+            "name": "Anecha Kuekharem",
+            "email": "anachitheu.k@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "slim/slim": "3.12.1",
+        "vlucas/phpdotenv": "5.3",
+        "illuminate/database": "7.30",
+        "illuminate/events": "7.30",
+        "illuminate/validation": "7.30",
+        "illuminate/translation": "7.30",
+        "illuminate/filesystem": "7.30"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "scripts": {
+        "start": "php -S localhost:8080 -t public public/index.php"
+    }
+}

@@ -1,0 +1,6 @@
+vendor/
+Dockerfile
+docker-compose.yml
+phinx.php
+database/migrations
+database/seeds
