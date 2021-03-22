@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Todo } from './todo.model';
-import { todos as mockupTodos } from './mock-todo';
+import { Item } from './item.model';
+import { items as mockupItems } from './mock-items';
 
 @Component({
   selector: 'app-home',
@@ -10,12 +10,12 @@ import { todos as mockupTodos } from './mock-todo';
 export class HomePage implements OnInit {
   text: string;
   isAdding = false;
-  todos: Todo[];
+  items: Item[];
 
   constructor() {}
 
   ngOnInit() {
-    this.getTodos();
+    this.getItems();
   }
 
   toggleForm() {
@@ -23,27 +23,30 @@ export class HomePage implements OnInit {
     this.text = '';
   }
 
-  getTodos() {
-    this.todos = mockupTodos;
+  getItems() {
+    this.items = mockupItems as Item[];
   }
 
-  addTodo() {
-    const todo: Todo = {
-      id: this.todos.length,
+  addItem() {
+    const items: Item = {
+      item_id: this.items.length + 1,
       title: this.text,
-      completed: false,
+      completed: 0,
     };
 
-    this.todos.push(todo);
+    this.items.push(items);
 
     this.isAdding = false;
   }
 
-  changeComplate(object: Todo) {
-
+  changeComplate(i: number, { completed, ...obj }: Item) {
+    this.items.splice(i, 1, {
+      ...obj,
+      completed: completed ? 0 : 1
+    });
   }
 
-  deleteTodo(object: Todo) {
-    this.todos = this.todos.filter((o) => o.id !== object.id);
+  deleteItem(i: number, object: Item) {
+    this.items.splice(i, 1);
   }
 }
