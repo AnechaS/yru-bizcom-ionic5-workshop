@@ -1,6 +1,6 @@
 # Step-1: การติดตั้ง และ Build APK
 
-### 1. ติดตั้ง Nodejs
+## ติดตั้ง Nodejs
 
 ดาวน์โหลดไฟล์จาก https://nodejs.org/en และทำการติดตั้ง หลังจากติดตั้งสำเร็จทดสอบการติดตั้งด้วยการเปิดโปรแกรม Command Prompt หรือ โปรแกรม Terminal และใช้คำสั่ง
 
@@ -9,7 +9,7 @@ $ node -v
 $ npm -v
 ```
 
-### 2. ติดตั้ง Ionic cli
+## ติดตั้ง Ionic cli
 
 หลังจากติดตั้ง Nodejs ให้ใช้คำสั่งดังนี้เพื่อติดตั้ง Ionic cli
 
@@ -23,7 +23,7 @@ $ npm install -g @ionic/cli
 $ ionic -v
 ```
 
-### 3. ติดตั้ง Git
+## ติดตั้ง Git
 
 ดาวน์โหลดไฟล์จาก https://git-scm.com/downloads และทำการติดตั้ง หลังจากติดตั้งสำเร็จทดสอบการติดตั้งโดยใช้คำสั่ง
 
@@ -31,7 +31,7 @@ $ ionic -v
 $ git --version
 ```
 
-### 4. ติดตั้งโปรแกรม Visual Studio Code
+## ติดตั้งโปรแกรม Visual Studio Code
 
 คุณสามารถใช้ Editor ตัวอื่นๆ เพื่อใช้ในการเขียนโค้ดได้ แต่ทีมงานแนะนำโปรแกรม Visual Studio Code ในการเขียน Ionic ดาวน์โหลดไฟล์จาก https://code.visualstudio.com/ และทำการติดตั้ง เพื่อใช้ในการเขียนโปรแกรม
 
@@ -97,9 +97,9 @@ $ java -version
 
 ### 5. เซต Environment Variables 
 
-=> 5.1 `เปิด File Explorer` และ`คลิกขวาที่ Icon This PC (หรือ Computer)` จากนั้นคลิก `Properties` -> `Advanced System Settings` -> `Environmental Variables`
+5.1 `เปิด File Explorer` และ`คลิกขวาที่ Icon This PC (หรือ Computer)` จากนั้นคลิก `Properties` -> `Advanced System Settings` -> `Environmental Variables`
 
-=> 5.2 `กดปุ่ม New…` เพื่อสร้าง system variable ใหม่ โดยตั้งชื่อ `ANDROID_HOME` และเก็บค่าที่อยู่ Android SDK ของคุณดังรูป
+5.2 `กดปุ่ม New…` เพื่อสร้าง system variable ใหม่ โดยตั้งชื่อ `ANDROID_HOME` และเก็บค่าที่อยู่ Android SDK ของคุณดังรูป
 
 ![set-env-adh](.github/set-env-adh.png)
 
@@ -109,9 +109,9 @@ $ java -version
 %LOCALAPPDATA%\Android\Sdk
 ```
 
-=> 5.3 `คลิกที่ Path` อยู่ใต้ System variables และ`กดปุ่ม Edit…`
+5.3 `คลิกที่ Path` อยู่ใต้ System variables และ`กดปุ่ม Edit…`
 
-=> 5.4 `กดที่ปุ่ม New` เพิ่ม path "platform-tools"
+5.4 `กดที่ปุ่ม New` เพิ่ม path "platform-tools"
 
 ตำแหน่งเริ่มต้นสำหรับโฟลเดอร์นี้คือ:
 
@@ -119,7 +119,7 @@ $ java -version
 %LOCALAPPDATA%\Android\Sdk\platform-tools
 ```
 
-=> 5.5 `กดที่ปุ่ม New` เพิ่ม path "tools/bin"
+5.5 `กดที่ปุ่ม New` เพิ่ม path "tools/bin"
 
 ตำแหน่งเริ่มต้นสำหรับโฟลเดอร์นี้คือ:
 
@@ -127,7 +127,7 @@ $ java -version
 %LOCALAPPDATA%\Android\Sdk\tools\bin
 ```
 
-=> 5.6 `กดที่ปุ่ม New` เพิ่ม path "emulator"
+5.6 `กดที่ปุ่ม New` เพิ่ม path "emulator"
 
 ตำแหน่งเริ่มต้นสำหรับโฟลเดอร์นี้คือ:
 
@@ -135,7 +135,8 @@ $ java -version
 %LOCALAPPDATA%\Android\Sdk\emulator
 ```
 
-### 6. อื่นๆ
+<br />
+<br />
 
 สามารถดูคู้มือ Ionic ในส่วนนี้ได้ที่ https://ionicframework.com/docs/developing/android
 
