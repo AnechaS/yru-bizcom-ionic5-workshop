@@ -672,7 +672,7 @@ const showMessage = (message = "") => {
 console.log(showMessage("hi"));
 ```
 
-##### Promise
+##### 3. Promise
 
 นิยมนำมาสร้างฟังก์ชันแบบ Asynchronous และใช้แก้ปัญหา Callback ฟังก์ชัน
 
