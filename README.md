@@ -662,7 +662,7 @@ function say(message = "") {
 console.log(say("hello"));
 ```
 
-##### Arrow
+##### 2. Arrow
 
 ```js
 const showMessage = (message = "") => {
