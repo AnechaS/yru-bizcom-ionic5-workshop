@@ -2,9 +2,9 @@
   "name": "nodejs-basic",
   "version": "1.0.0",
   "description": "",
-  "main": "myGrade.js",
+  "main": "main.js",
   "scripts": {
-    "start": "node ./myGrade.js"
+    "start": "node ./main.js"
   },
   "author": "",
   "license": "ISC",

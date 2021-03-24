@@ -1,8 +1,8 @@
-# Step-0: Syntex ของ HTML, CSS, Javascript, Typescript
+# Step-0: Syntax ของ HTML, CSS, Javascript, Typescript
 
 ## 1. HTML (HyperText Markup Language)
 
-HTML เป็นภาษาคอมพิวเตอร์ที่ใช้สร้างหน้าเว็บ เวอร์ชันของ HTML ในปัจจุบันเป็นเวอร์ชัน **5** โดยโค้ดของ HTML จะประกอบด้วย Tag ต่างๆ ที่ใช้แตกต่างกันไป โดยจะประกอบด้วยเครื่องหมาย “<>” และชื่อที่อยู่ตรงกลาง Tag โดยสามารถศึกษา Tag ของ HTML ทั้งหมดได้จาก https://www.w3schools.com/html 
+เป็นภาษาคอมพิวเตอร์ที่ใช้สร้างหน้าเว็บ เวอร์ชันของ HTML ในปัจจุบันเป็นเวอร์ชัน **5** โดยโค้ดของ HTML จะประกอบด้วย Tag ต่างๆ ที่ใช้แตกต่างกันไป โดยจะประกอบด้วยเครื่องหมาย “<>” และชื่อที่อยู่ตรงกลาง Tag โดยสามารถศึกษา Tag ของ HTML ทั้งหมดได้จาก https://www.w3schools.com/html 
 
 
 >**คำชี้แจง:** 
@@ -114,7 +114,7 @@ https://www.w3schools.com/tags/default.asp
 
 ## 2. CSS (Cascading Style Sheets)
 
-CSS เป็นภาษาที่ใช้สำหรับตกแต่งการแสดงผลของเอกสาร HTML ให้มีสีสัน, ขนาด, ระยะห่าง และอื่นๆ ตามที่ต้องการ โดยสามารถศึกษาเพิ่มเติมได้จาก https://www.w3schools.com/css
+เป็นภาษาที่ใช้สำหรับตกแต่งการแสดงผลของเอกสาร HTML ให้มีสีสัน, ขนาด, ระยะห่าง และอื่นๆ ตามที่ต้องการ โดยสามารถศึกษาเพิ่มเติมได้จาก https://www.w3schools.com/css
 
 
 โค้ดของ CSS สามารถทำงานใน HTML ได้ก็ต่อเมื่อ
@@ -250,7 +250,7 @@ https://www.w3schools.com/cssref/default.asp
 
 ## Javascript
 
-Javascript เป็นภาษาคอมพิวเตอร์ สามารถนำมาใช้งานร่วมกับ HTML เพื่อให้เว็บไซต์สามารถตอบสนองผู้ใช้งานได้มากขึ้น ในปัจจุบัน Javascript ได้รับความนิยมอย่างสูง เพราะสามารถนำไปพัฒนา Server Side, Mobile, Desktop และอื่นๆ
+เป็นภาษาคอมพิวเตอร์ สามารถนำมาใช้งานร่วมกับ HTML เพื่อให้เว็บไซต์สามารถตอบสนองผู้ใช้งานได้มากขึ้น ในปัจจุบัน Javascript ได้รับความนิยมอย่างสูง เพราะสามารถนำไปพัฒนา Server Side, Mobile, Desktop และอื่นๆ
 
 
 โค้ดของ Javascript สามารถทำงานใน HTML ได้ก็ต่อเมื่อ
@@ -299,11 +299,11 @@ document.write("Hi");
 
 สามารถศึกษาได้จาก: https://www.w3schools.com/js/js_htmldom.asp
 
-### Syntax
+### Syntax Javascript
 
-#### 1. Variables (ตัวแปล)
+#### 1. Variables (ตัวแปร)
 
-keyword สำหรับประกาศตัวแปลใน Javascript มีอยู่ 3 เภท ได้แก่ `var`, `let` และ `const` (ตัวแปลแบบ constant)
+keyword สำหรับประกาศตัวแปรใน Javascript มีอยู่ 3 เภท ได้แก่ `var`, `let` และ `const` (ตัวแปรแบบ constant)
 
 
 ```js
@@ -318,11 +318,11 @@ console.log(desktop);
 
 >**คำแนะนำ:**
 >
-> * หลักการตั้งชื่อตัวแปล ให้ขึ้นต้นด้วยตัวอักษรพิมพ์เล็ก และถ้าหากมี 2 คำใช้คำถัดไปขึ้นด้วยตัวพิมพ์ใหญ่ เช่น (phoneColor)
+> * หลักการตั้งชื่อตัวแปร ให้ขึ้นต้นด้วยตัวอักษรพิมพ์เล็ก และถ้าหากมี 2 คำใช้คำถัดไปขึ้นด้วยตัวพิมพ์ใหญ่ เช่น (phoneColor)
 >
-> * Javascript es6 ให้ใช้ let และ const เป็นหลัก
+> * Javascript ES2016 ขึ้นไป ให้ใช้ let และ const เป็นหลัก
 >
-> * "let" ถ้าตั้งชื่อตัวแปลซ้ำจะ Error
+> * "let" ถ้าตั้งชื่อตัวแปรซ้ำจะ Error
 
 ความแตกต่างระหว่าง var และ let คือ 'var' สามารถเรียกใช้งานนอก block ได้ แต่ 'let' ไม่ได้
 
@@ -337,7 +337,7 @@ console.log(a1);
 console.log(a2);
 ```
 
-##### Data Types (ประเภทข้อมูลตัวแปล)
+##### Data Types (ประเภทข้อมูลตัวแปร)
 
 1. `String` --> 'hello', "hello", `hello`
 
@@ -381,7 +381,7 @@ console.log('car name', obj.name);
 console.log('car color', obj.color);
 ```
 
-Array ใน Js จะจัดอยู่ในประเภทข้อมูล Object
+Array ใน Javasript จะจัดอยู่ในประเภทข้อมูล Object
 
 ```js
 let arr = ['red', 'black', 'green'];
@@ -396,4 +396,497 @@ console.log(arr[0]);
 
 arr.push('orange');
 console.log(arr);
+```
+
+#### 2. Operators (เครื่องหมายดำเนินการ)
+
+##### 2.1 เชื่อมข้อความ
+
+```js
+console.log('Hello' + ' World'); // => Hello World
+```
+
+##### 2.2 บวก (+), ลบ (-), คูณ (*), หาร (/)
+
+```js
+// ((1 บวก 1) คูณ 10) หาร 10
+console.log(((1 + 1) * 10) / 2); // => 10
+```
+
+ภาษาคอมพิวเตอร์จะคำนวณตามเครื่องหมาย ดังนั้นเราจึงต้องใส่ () เพื่อให้โปรแกรมคำนวณตามลำดับที่เราต้องการ
+
+##### 2.3 เพิ่ม (++) / ลด (--)
+
+```js
+let n1 = 8;
+
+// เพิ่ม
+++n1;
+console.log(n1); // => 9
+
+// ลด
+--n1;
+console.log(n1); // => 8
+```
+
+
+##### 2.3 Assignment
+
+```js
+let n2 = 1;
+
+// เอาข้อมูลเดิมใน 'n2' + 1 และเปลียนค่า
+n2 += 1;
+console.log(n2); // => 2
+
+// เอาข้อมูลเดิมใน 'n2' - 1 และเปลียนค่า
+n2 -= 1;
+console.log(n2); // => 1
+```
+
+##### 2.4 เปรียบเทียบ
+
+เท่ากับ
+```js
+console.log(1 == 1); // => true
+```
+
+เท่ากับและดูประเภทข้อมูล
+```js
+console.log(1 === "1"); // => false
+```
+
+ไม่เท่ากับ
+```js
+console.log(1 != 2); // => true
+```
+
+ไม่เท่ากับและดูประเภทข้อมูล
+```js
+console.log(2 !== "2"); // => true
+```
+
+มากกว่า (>)
+```js
+console.log(2 > 1); // => true
+```
+
+มากกว่าหรือเท่ากับ (>=)
+```js
+console.log(2 >= 1); // => true
+```
+
+
+น้อยกว่า (<)
+```js
+console.log(1 < 2); // => true
+```
+
+น้อยกว่าหรือเท่ากับ (<=)
+```js
+console.log(2 <= 2); // => true
+```
+
+##### Logical
+
+not (!) คือ ไม่เท่ากับ หรือ ตรงกันข้าม
+```js
+console.log(!true); // => false
+```
+
+and (&&) คือ ด้านหน้าและหลัง && ต้องมีค่าเป็น true จึงมีค่าเท่ากับ true
+```js
+console.log(true && true); // => true
+```
+
+or (||) คือ ด้านหน้าหรือหลัง || ต้องมีค่าเป็น true จึงมีค่าเท่ากับ true
+```js
+console.log(false || true); // => true
+```
+
+> **หมายเหตุ:**
+>
+> เครื่อง Operators มีเยอะมาก เราไม่สามารถเขียนได้หมด สามารถศึกษาเพิ่มเติมได้จาก https://www.w3schools.com/js/js_operators.asp
+
+#### Conditions (เงื่อนไข)
+
+##### If-else
+
+```js
+if (score == 50) {
+    console.log('score is 50');
+} else if (score > 60) {
+    console.log('score greater than 50');
+} else {
+    console.log('score is not 50');
+}
+```
+
+##### Switch
+
+```js
+let name = "Goku";
+
+switch (name) {
+  case "Goku":
+    console.log("name is goku");
+    break;
+
+  case "Goten":
+    console.log("name is goten");
+    break;
+
+  default:
+    console.log("name is gohan");
+    break;
+}
+```
+
+> **คำแนะนำ:**
+>
+>เหมาะกับเงื่อนไขที่ไม่ซับซ้อบ
+
+##### ใช้เครื่องหมาย Operator
+
+```js
+let n = 2;
+
+console.log(n < 2 ? "n less than 2" : "n greather than or equal 2");
+```
+
+#### Loops (การวนซ้ำ)
+
+> **คำแนะนำ:**
+>
+> * For: ใช้งานเมื่อรู้จำนวนครั้งที่จะวนซ้ำ
+>
+> * White: ใช้งานเมื่อไม่รู้จำนวนครั้งที่จะวนซ้ำ
+>
+> * Do-white: ไม่รู้จำนวนครั้งที่จะวนซ้ำ โดยทำก่อน 1 ครั้ง แล้วเช็กเงื่อนไข
+
+##### For
+
+```js
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+```
+
+##### White
+
+```js
+let c = 0;
+while (c < 5) {
+  console.log(c);
+
+  c += 1;
+}
+```
+
+##### Do-white
+
+```js
+c = 0;
+do {
+  console.log(c);
+
+  c += 1;
+} while (c < 5);
+
+```
+
+##### การนำไปใช้งานกับ Array
+
+```js
+let cars = ["honda", "toyota", "bmw", "nisson"];
+```
+
+ตัวอย่างที่ 1: ใช้ for แบบดังเดิม
+```js
+for (let index = 0; index < cars.length; index++) {
+    let car = cars[index];
+
+    console.log(car);   
+}
+```
+
+ตัวอย่างที่ 2: ใช้ for in
+
+```js
+for (let key in cars) {
+    let car = cars[key];
+
+    console.log(car);
+}
+```
+
+ตัวอย่างที่ 3: ใช้ for of
+
+```js
+for (let object of collection) {
+    console.log(object);
+}
+```
+
+ตัวอย่างที่ 5: ใช้ Method ของข้อมูล
+
+```js
+cars.forEach(function (car) {
+  console.log(car);
+});
+```
+
+#### Functions (ฟังก์ชัน)
+
+ประโยชน์ของการสร้างฟังก์ชัน คือ ช่วยลดการเขียนโค้ดซ้ำๆ และช่วยให้แก้ไขโค้ดได้ง่ายสะดวกรวดเร็ว เพราะโค้ดอยู่ในที่เดียว
+
+รูปแบบของ Function ใน Javascript มีดังนี้
+
+##### 1. Default
+
+```js
+function say() {
+  return message;
+}
+
+console.log(say());
+```
+
+ส่ง Parameter ไปยัง function
+
+```js
+function say(message = "") {
+  return message;
+}
+
+console.log(say("hello"));
+```
+
+##### Arrow
+
+```js
+const showMessage = (message = "") => {
+  return message;
+};
+
+console.log(showMessage("hi"));
+```
+
+##### Promise
+
+นิยมนำมาสร้างฟังก์ชันแบบ Asynchronous และใช้แก้ปัญหา Callback ฟังก์ชัน
+
+```js
+function sayPromise(message) {
+  return new Promise((resolve, reject) => {
+    if (!message) {
+      return reject(new Error("argument is required"));
+    }
+
+    setTimeout(() => {
+      return resolve(message);
+    }, 2000);
+  });
+}
+```
+
+เรียกใช้งานแบบ Asynchronous
+
+```js
+sayPromise('hey')
+  .then(result => {
+      console.log(result);
+  })
+  .catch(error => {
+      console.log(error);
+  });
+```
+
+เรียกใช้งานแบบ Synchronous
+
+```js
+async function runPromise() {
+  try {
+    const result = await sayPromise("hey");
+    console.log(result);
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+runPromise();
+```
+
+#### Object and Classes
+
+เป็นการเขียนโปรแกรมเชิงวัตถุ Object Oriented Programming (OOP) โดยในแต่ละ Object จะประกอบด้วย Properties และ Methods
+
+บทความที่อธิบาย OOP ได้เข้าใจง่าย => https://www.borntodev.com/2020/04/14/oop-จากตัวอย่างที่ง่ายๆ
+
+```js
+let Car = {
+  // Properties
+  name: "hondar",
+  color: "black",
+
+  // Methods
+  show() {
+    console.log(this.name, "color", this.color);
+  }
+};
+
+console.log(Car.name);
+console.log(Car["color"]);
+Car.show();
+```
+
+##### Classes (ES2015)
+
+```js
+function Notbook(name, color) {
+  this.name = name;
+  this.color = color;
+}
+
+Notbook.prototype.show = function () {
+  console.log(this.name, "color", this.color);
+};
+
+const asus = new Notbook("asus", "black");
+console.log(asus.name);
+console.log(asus.color);
+asus.show();
+```
+
+##### Classes (ES2016)
+
+```js
+class Phone {
+  constructor(name, color) {
+    this.name = name;
+    this.color = color;
+  }
+
+  show() {
+    console.log(this.name, "color", this.color);
+  }
+}
+
+const iphone = new Phone("iphone6", "white");
+console.log(iphone.name);
+console.log(iphone.color);
+iphone.show();
+```
+
+> **หมายเหตุ:**
+>
+> ในส่วนของการเขียนโปรแกรมแบบ OOP เราจะไปลงลึกกันใน Typescript เพราะในภาษา Javascript ยังขาดพวก Visibility, Interface, Abstract และอื่นๆ
+>
+> ถ้าหากสนใจ OOP ใน Javascript สามารถเข้าไปศึกษาได้จาก 
+>
+> https://www.w3schools.com/js/js_class_intro.asp
+>
+> https://www.w3schools.com/js/js_object_definition.asp
+
+### Node.js
+
+เป็น JavaScript runtime
+
+#### Run โค้ด Javascript
+
+ไฟล์ `main.js`
+
+```js
+let score = 99;
+
+if (score >= 80) {
+  console.log("A");
+} else if (score >= 70) {
+  console.log("B");
+} else if (score >= 60) {
+  console.log("C");
+} else if (score >= 50) {
+  console.log("D");
+} else {
+  console.log("E");
+}
+```
+
+ใช้คำสั่ง Run
+
+```bash
+node main.js
+```
+
+#### สร้าง Modules
+
+ไฟล์ `showMessage.js`
+
+```js
+function showMessage(degree) {
+  console.log('I got grade "' + degree + '"');
+}
+
+module.exports = showMessage;
+```
+
+เรียกใช้งาน Module ในไฟล์ `main.js`
+
+```js
+const showMessage = require("./showMessage");
+
+let score = 99;
+
+if (score >= 80) {
+  showMessage("A");
+} else if (score >= 70) {
+  showMessage("B");
+} else if (score >= 60) {
+  showMessage("C");
+} else if (score >= 50) {
+  showMessage("D");
+} else {
+  showMessage("E");
+}
+```
+
+#### ใช้งาน Package ใน npm
+
+เซตอัปโดยใช้คำสั่ง
+
+```bash
+$ npm init
+```
+
+หากสำเร็จจะเห็นไฟล์ `package.json`
+
+หา Package ที่ต้องการใช้จาก https://www.npmjs.com โดยตัวอย่างนี้ผมจะใช้ Lodash
+
+```bash
+npm install lodash
+```
+
+เรียกใช้งาน Lodash ในไฟล์ `main.js`
+
+```js
+const _ = require("lodash");
+const showMessage = require("./showMessage");
+
+let score = '99';
+
+if (!_.isNumber(score)) {
+  console.log('"score" must be a Number');
+} else {
+  if (score >= 80) {
+    showMessage("A");
+  } else if (score >= 70) {
+    showMessage("B");
+  } else if (score >= 60) {
+    showMessage("C");
+  } else if (score >= 50) {
+    showMessage("D");
+  } else {
+    showMessage("E");
+  }
+}
 ```
