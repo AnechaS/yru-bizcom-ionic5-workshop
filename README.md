@@ -248,7 +248,7 @@ input[name="username"] {
 https://www.w3schools.com/cssref/default.asp
 
 
-## Javascript
+## 3. Javascript
 
 เป็นภาษาคอมพิวเตอร์ สามารถนำมาใช้งานร่วมกับ HTML เพื่อให้เว็บไซต์สามารถตอบสนองผู้ใช้งานได้มากขึ้น ในปัจจุบัน Javascript ได้รับความนิยมอย่างสูง เพราะสามารถนำไปพัฒนา Server Side, Mobile, Desktop และอื่นๆ
 
@@ -301,7 +301,7 @@ document.write("Hi");
 
 ### Syntax Javascript
 
-#### 1. Variables (ตัวแปร)
+#### `Variables` (ตัวแปร)
 
 keyword สำหรับประกาศตัวแปรใน Javascript มีอยู่ 3 เภท ได้แก่ `var`, `let` และ `const` (ตัวแปรแบบ constant)
 
@@ -398,15 +398,15 @@ arr.push('orange');
 console.log(arr);
 ```
 
-#### 2. Operators (เครื่องหมายดำเนินการ)
+#### `Operators` (เครื่องหมายดำเนินการ)
 
-##### 2.1 เชื่อมข้อความ
+##### 1 เชื่อมข้อความ
 
 ```js
 console.log('Hello' + ' World'); // => Hello World
 ```
 
-##### 2.2 บวก (+), ลบ (-), คูณ (*), หาร (/)
+##### 2 บวก (+), ลบ (-), คูณ (*), หาร (/)
 
 ```js
 // ((1 บวก 1) คูณ 10) หาร 10
@@ -415,7 +415,7 @@ console.log(((1 + 1) * 10) / 2); // => 10
 
 ภาษาคอมพิวเตอร์จะคำนวณตามเครื่องหมาย ดังนั้นเราจึงต้องใส่ () เพื่อให้โปรแกรมคำนวณตามลำดับที่เราต้องการ
 
-##### 2.3 เพิ่ม (++) / ลด (--)
+##### 3 เพิ่ม (++) / ลด (--)
 
 ```js
 let n1 = 8;
@@ -430,7 +430,7 @@ console.log(n1); // => 8
 ```
 
 
-##### 2.3 Assignment
+##### 4 Assignment
 
 ```js
 let n2 = 1;
@@ -444,7 +444,7 @@ n2 -= 1;
 console.log(n2); // => 1
 ```
 
-##### 2.4 เปรียบเทียบ
+##### 5 เปรียบเทียบ
 
 เท่ากับ
 ```js
@@ -508,7 +508,7 @@ console.log(false || true); // => true
 >
 > เครื่อง Operators มีเยอะมาก เราไม่สามารถเขียนได้หมด สามารถศึกษาเพิ่มเติมได้จาก https://www.w3schools.com/js/js_operators.asp
 
-#### Conditions (เงื่อนไข)
+#### `Conditions` (เงื่อนไข)
 
 ##### If-else
 
@@ -554,7 +554,7 @@ let n = 2;
 console.log(n < 2 ? "n less than 2" : "n greather than or equal 2");
 ```
 
-#### Loops (การวนซ้ำ)
+#### `Loops` (การวนซ้ำ)
 
 > **คำแนะนำ:**
 >
@@ -636,7 +636,7 @@ cars.forEach(function (car) {
 });
 ```
 
-#### Functions (ฟังก์ชัน)
+#### `Functions` (ฟังก์ชัน)
 
 ประโยชน์ของการสร้างฟังก์ชัน คือ ช่วยลดการเขียนโค้ดซ้ำๆ และช่วยให้แก้ไขโค้ดได้ง่ายสะดวกรวดเร็ว เพราะโค้ดอยู่ในที่เดียว
 
@@ -717,7 +717,7 @@ async function runPromise() {
 runPromise();
 ```
 
-#### Object and Classes
+#### `Object and Classes`
 
 เป็นการเขียนโปรแกรมเชิงวัตถุ Object Oriented Programming (OOP) โดยในแต่ละ Object จะประกอบด้วย Properties และ Methods
 
@@ -788,11 +788,11 @@ iphone.show();
 >
 > https://www.w3schools.com/js/js_object_definition.asp
 
-### Node.js
+## 4. Node.js
 
 เป็น JavaScript runtime
 
-#### Run โค้ด Javascript
+### Run โค้ด Javascript
 
 ไฟล์ `main.js`
 
@@ -818,7 +818,7 @@ if (score >= 80) {
 node main.js
 ```
 
-#### สร้าง Modules
+### สร้าง Modules
 
 ไฟล์ `showMessage.js`
 
@@ -850,7 +850,7 @@ if (score >= 80) {
 }
 ```
 
-#### ใช้งาน Package ใน npm
+### ใช้งาน Package ใน npm
 
 เซตอัปโดยใช้คำสั่ง
 
@@ -890,3 +890,6 @@ if (!_.isNumber(score)) {
   }
 }
 ```
+
+
+## 5. Typescript
