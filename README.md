@@ -290,7 +290,7 @@ https://www.w3schools.com/cssref/default.asp
 </html>
 ```
 
-ไฟล์ `/js/main.js`
+ไฟล์ `main.js`
 
 ```js
 document.write("Hi");
@@ -926,8 +926,24 @@ if (!_.isNumber(score)) {
 
 ```bash
 $ npm install typescript --save-dev
-$ npx tsc init
+$ npx tsc --init
 ```
+
+หากรันคำสั่งดังกล่าวสำเร็จ จะเห็นไฟล์ `tsconfig.json` ให้เปิดไฟล์ดังกล่าวขึ้นมา และทำการ `config` ดังนี้
+
+1. เปิดให้สามารถเรียกใช้งาน Module Javascript ได้
+
+```json
+ "allowJs": true,
+```
+
+2. ระบุที่อยู่โฟรเดอร์โค้ดตอน Build และโค้ด Typescript
+
+```json
+ "outDir": "./dist",
+ "rootDir": "./src",
+```
+
 
 ### Types
 

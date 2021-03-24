@@ -1,7 +1,7 @@
 const _ = require("lodash");
 const showMessage = require("./showMessage");
 
-let score = '99';
+let score = 99;
 
 if (!_.isNumber(score)) {
   console.log('"score" must be a Number');
