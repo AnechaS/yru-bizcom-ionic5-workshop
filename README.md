@@ -837,7 +837,7 @@ if (score >= 80) {
 }
 ```
 
-ใช้คำสั่ง Run
+คำสั่ง Run
 
 ```bash
 node main.js
@@ -918,18 +918,18 @@ if (!_.isNumber(score)) {
 
 ## 5. Typescript
 
-เป็น Superset ของ JavaScript (หมายความว่าสามารถใช้ทุก feature ของ JavaScript ได้เลย) โดยรูปแบบโค้ดของ Typescript จะมีความคลายกับ Javascript ต่างกันตรงที่มี Type ข้อมูล และยังมีคุณสมบัตืของการเขียนโปรแกรมแบบ OOP มากกว่า Javascript โดยสามารถศึกษาข้อมูลเพิ่มเติมได้จาก https://www.typescriptlang.org
+เป็น Superset ของ JavaScript (หมายความว่าสามารถใช้ทุก feature ของ JavaScript ได้เลย) โดยรูปแบบโค้ดของ Typescript จะมีความคล้ายกับ Javascript ต่างกันตรงที่มี Type ข้อมูล และยังมีคุณสมบัติของการเขียนโปรแกรมแบบ OOP มากกว่า Javascript โดยสามารถศึกษาข้อมูลเพิ่มเติมได้จาก https://www.typescriptlang.org
 
 ### ติดตั้ง Typescript ลงในโปรเจค
 
-ก่อนที่จะติดตั้ง typescript ลงในโปรเจค อย่างลื่มสร้างไฟล์ package.json โดยใช้คำสั่ง `npm init` ก่อนนะครับ
+ก่อนที่จะติดตั้ง Typescript ลงในโปรเจค อย่าลื่มสร้างไฟล์ package.json โดยใช้คำสั่ง `npm init` ก่อนนะครับ
 
 ```bash
 $ npm install typescript --save-dev
 $ npx tsc --init
 ```
 
-หากรันคำสั่งดังกล่าวสำเร็จ จะเห็นไฟล์ `tsconfig.json` ให้เปิดไฟล์ดังกล่าวขึ้นมา และทำการ `config` ดังนี้
+หาก Run คำสั่งดังกล่าวสำเร็จ จะเห็นไฟล์ `tsconfig.json` ให้เปิดไฟล์ดังกล่าวขึ้นมา และทำการ `config` ดังนี้
 
 1. เปิดให้สามารถเรียกใช้งาน Module Javascript ได้
 
@@ -937,7 +937,7 @@ $ npx tsc --init
  "allowJs": true,
 ```
 
-2. ระบุที่อยู่โฟรเดอร์โค้ดตอน Build และโค้ด Typescript
+2. ระบุที่อยู่โฟลเดอร์โค้ดตอน Build และโค้ด Typescript
 
 ```json
  "outDir": "./dist",
@@ -948,7 +948,7 @@ $ npx tsc --init
 
 > **คำชี้แจง:**
 >
-> โค้ด Typescript จะต้อง Build เป็น Javascript เสียก่อน จึ้งสามารถ Run บน Node.js ได้
+> โค้ด Typescript จะต้อง Build เป็น Javascript เสียก่อน จึงสามารถ Run บน Node.js ได้
 >
 > คำสั่ง Build โต้ด Typescript คือ `npx tsc`
 
@@ -1067,8 +1067,8 @@ function getCar(): object {
 
 เป็นซอสโค้ดที่เรามองว่าเป็น Object (วัตถุ) โดย Class ประกอบไปด้วย Properties (คุณสมบัติ) และ Methods (ดำเนินการ)
 
-<span>+</span> **Properties:** ข้อสั่งเกตคือ ประกาศคลายกับตัวแปล (name = value)\
-<span>+</span> **Methods:** ข้อสั่งเกตคือ ประกาศคลายกับฟังก์ชัน (show() {})
+<span>+</span> **Properties:** ข้อสั่งเกตคือ ประกาศคล้ายกับตัวแปร (name = value)\
+<span>+</span> **Methods:** ข้อสั่งเกตคือ ประกาศคล้ายกับฟังก์ชัน (show() {})
 
 **Visibility** คือ การมองเห็น Properties หรือ Methods ใน Class นั้น
 
@@ -1084,7 +1084,7 @@ function getCar(): object {
 >
 > การตั้งชื่อ Class ควรขึ้นต้นด้วยตัวพิมพ์ใหญ่ 
 >
-> และใน 1 ไฟล์ควรมีแค่ 1 Class เท่า จะทำง่ายเมื่อแก้ไข เพราะโค้ดจัดเรียนเป็นระแบบ และไลดูโค้ดได้ง่าย 
+> และใน 1 ไฟล์ควรมีแค่ 1 Class เท่า จะทำง่ายเมื่อแก้ไข เพราะโค้ดจัดเรียงเป็นระบบ และไลดูโค้ดได้ง่าย 
 
 &nbsp;
 
@@ -1343,6 +1343,6 @@ debug('Hey')
 console.log(logs);
 ```
 
-> **คำอธิบายเพิ่มเติมะ**
+> **คำอธิบายเพิ่มเติม:**
 >
 > การใช้งาน Package ใน npm จะเหมือนกับ Node.js แต่ควรใช้การ import Package แบบ Javascript ES2016
