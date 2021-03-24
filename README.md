@@ -944,8 +944,12 @@ $ npx tsc --init
  "rootDir": "./src",
 ```
 
-
 ### Types
+
+> **คำชี้แจง**
+>
+> โค้ด Typescript จะต้อง Build เป็น Javascript ก่อนจึ้งสามารถ Run บน Node.js ได้
+> คำสั่ง Build โต้ด Typescript คือ `npx tsc`
 
 #### `String`
 
