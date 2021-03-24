@@ -946,9 +946,10 @@ $ npx tsc --init
 
 ### Types
 
-> **คำชี้แจง**
+> **คำชี้แจง:**
 >
-> โค้ด Typescript จะต้อง Build เป็น Javascript ก่อนจึ้งสามารถ Run บน Node.js ได้
+> โค้ด Typescript จะต้อง Build เป็น Javascript เสียก่อน จึ้งสามารถ Run บน Node.js ได้
+>
 > คำสั่ง Build โต้ด Typescript คือ `npx tsc`
 
 #### `String`
@@ -1079,9 +1080,15 @@ function getCar(): object {
 
 **Static** คือ keyword ที่ทำให้เราสามารถเรียกใช้ Properties หรือ Methods ได้ทันทีโดยไม่ต้องประกาศ new ClassName()
 
+> **คำแนะ:**
+>
+> การตั้งชื่อ Class ควรขึ้นต้นด้วยตัวพิมพ์ใหญ่ 
+>
+> และใน 1 ไฟล์ควรมีแค่ 1 Class เท่า จะทำง่ายเมื่อแก้ไข เพราะโค้ดจัดเรียนเป็นระแบบ และไลดูโค้ดได้ง่าย 
+
 &nbsp;
 
-**ตัวอย่าง** Class Person(คน)
+**ตัวอย่าง:** Class Person(คน)
 
 **Properties:**\
 <span>+</span> firstname\
@@ -1276,20 +1283,66 @@ iphone5s.show();
 #### Abstract (แม่แบบที่สามารถใส่โค้ด Logic ได้)
 
 ```ts
-abstract class Base {
-  abstract getName(): string;
+abstract class Android {
+  abstract getVersion(): number;
 
-  printName() {
-    console.log("Hello, " + this.getName());
+  printVersion() {
+    console.log("Hello, " + this.getVersion());
   }
 }
 
-class Derived extends Base {
-  getName() {
-    return "world";
+class Sumsung extends Android {
+  name = "sumsung";
+  version = 10;
+
+  getVersion() {
+    return this.version;
   }
 }
 
-let d = new Derived();
-d.printName();
+let sumsung = new Sumsung();
+sumsung.getVersion();
 ```
+
+### Modules
+
+การสร้าง Module ใน Typescript ก็จะเหมือนกับการสร้าง Module ใน Javascript ES2016
+
+ไฟล์ `logger.ts`
+
+```ts
+export default function logger(message: string): void {
+  console.log({
+    message,
+    timestam: (new Date()).toISOString()
+  });
+}
+
+export function info(param: any): void {
+  console.info('info:', param);
+}
+
+export function debug(param: any): void {
+  console.debug('debug:', param);
+}
+
+export const logs = ["info", "debug"];
+```
+
+ไฟล์ `main.ts`
+
+```ts
+import logger, { info, debug, logs } from './logger';
+
+logger('Hello');
+
+info('Hi');
+
+debug('Hey')
+
+console.log(logs);
+```
+
+> **คำอธิบายเพิ่มเติมะ**
+>
+> การใช้งาน Package ใน npm จะเหมือนกับ Node.js แต่ควรใช้การ import Package แบบ Javascript ES2016

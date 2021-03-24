@@ -1,6 +1,3 @@
-// Basic Types
-// ดู Types ทั้งหมดได้ที่ https://www.typescriptlang.org/docs/handbook/basic-types.html
-
 // String
 let fullName: string = `Bob Bobbington`;
 
@@ -46,7 +43,6 @@ let car: Car = {
   color: "red",
 };
 
-// การสร้าง type ด้วย interface ต่างกับ type คือ interface สามารถเป็นแม่แบบของ class ได้
 interface Phone {
   name: string;
   color: string;
@@ -58,7 +54,6 @@ let iphone: Phone = {
 };
 
 // Functional
-// type default ของ return function คือ any
 function sayHello(message: string): void {
     console.log(message);
 }
