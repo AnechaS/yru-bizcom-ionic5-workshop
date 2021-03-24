@@ -2,13 +2,11 @@
 
 ## 1. HTML (HyperText Markup Language)
 
-เป็นภาษาคอมพิวเตอร์ที่ใช้สร้างหน้าเว็บ เวอร์ชันของ HTML ในปัจจุบันเป็นเวอร์ชัน **5** โดยโค้ดของ HTML จะประกอบด้วย Tag ต่างๆ ที่ใช้แตกต่างกันไป โดยจะประกอบด้วยเครื่องหมาย “<>” และชื่อที่อยู่ตรงกลาง Tag โดยสามารถศึกษา Tag ของ HTML ทั้งหมดได้จาก https://www.w3schools.com/html 
+เป็นภาษาคอมพิวเตอร์ที่ใช้สร้างหน้าเว็บ เวอร์ชันของ HTML ในปัจจุบันเป็นเวอร์ชัน **5** โดยโค้ดของ HTML จะประกอบด้วย Tag ต่างๆ ที่ใช้แตกต่างกันไป โดยจะประกอบด้วยเครื่องหมาย “<>” และชื่อที่อยู่ตรงกลาง Tag โดยสามารถศึกษา Tag ของ HTML ทั้งหมดได้จาก https://www.w3schools.com/html
 
-
->**คำชี้แจง:** 
+> **คำชี้แจง:**
 >
->Tag ต่าง ๆ ใน HTML เราจะเรียกว่า "Element"
-
+> Tag ต่าง ๆ ใน HTML เราจะเรียกว่า "Element"
 
 ตัวอย่างเอกสาร HTML
 
@@ -20,7 +18,7 @@
     <title>Page Title</title>
   </head>
   <body>
-      <h1>Hello</h1>
+    <h1>Hello</h1>
   </body>
 </html>
 ```
@@ -48,10 +46,11 @@
 
 ```html
 <p>
-  Lorem <b>ipsum</b> <i>dolor</i> <u>sit</u> <sub>amet</sub> consectetur <sup>adipisicing</sup>
-  elit. <strong>Distinctio</strong> ab iure <small>temporibus quod numquam!</small> Necessitatibus ipsa quae
-  <mark>nobis repudiandae</mark> nesciunt unde, ab <del>iure rem</del> ratione saepe odit quaerat
-  ipsum placeat.
+  Lorem <b>ipsum</b> <i>dolor</i> <u>sit</u> <sub>amet</sub> consectetur
+  <sup>adipisicing</sup> elit. <strong>Distinctio</strong> ab iure
+  <small>temporibus quod numquam!</small> Necessitatibus ipsa quae
+  <mark>nobis repudiandae</mark> nesciunt unde, ab <del>iure rem</del> ratione
+  saepe odit quaerat ipsum placeat.
 </p>
 ```
 
@@ -66,7 +65,6 @@
 ```html
 <label for="username">username: </label>
 <input type="text" id="username" name="username" placeholder="Enter your username" />
-
 <br />
 
 <label for="language">language: </label>
@@ -75,12 +73,14 @@
   <option>Python</option>
   <option>C++</option>
 </select>
+<br />
 
 colors:
 <input type="checkbox" id="red" name="color" value="red" />
 <label for="red">red</label>
 <input type="checkbox" id="black" name="color" value="black" />
 <label for="black">black</label>
+<br />
 
 animals:
 <input type="radio" id="cat" name="animal" value="cat" />
@@ -100,10 +100,10 @@ animals:
 ```html
 <div>
   <div>
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur,
-    sed aut assumenda eveniet optio quo quam nesciunt mollitia, repellat
-    autem cumque repudiandae perspiciatis ab ullam libero officia!
-    Provident, voluptate debitis!
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur, sed
+    aut assumenda eveniet optio quo quam nesciunt mollitia, repellat autem
+    cumque repudiandae perspiciatis ab ullam libero officia! Provident,
+    voluptate debitis!
   </div>
 </div>
 ```
@@ -116,7 +116,6 @@ https://www.w3schools.com/tags/default.asp
 
 เป็นภาษาที่ใช้สำหรับตกแต่งการแสดงผลของเอกสาร HTML ให้มีสีสัน, ขนาด, ระยะห่าง และอื่นๆ ตามที่ต้องการ โดยสามารถศึกษาเพิ่มเติมได้จาก https://www.w3schools.com/css
 
-
 โค้ดของ CSS สามารถทำงานใน HTML ได้ก็ต่อเมื่อ
 
 1. ใช้ Tag `<link rel="stylesheet" href="ชื่อไฟล์.css" />`
@@ -128,19 +127,19 @@ https://www.w3schools.com/tags/default.asp
     <meta charset="UTF-8" />
     <title>Page Title</title>
 
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-      <h1 class="text-header1">Heading 1</h1>
+    <h1 class="text-header1">Heading 1</h1>
   </body>
 </html>
 ```
 
-ไฟล์ `css/style.css`
+ไฟล์ `style.css`
 
 ```css
 .text-header1 {
-    color: green;
+  color: green;
 }
 ```
 
@@ -154,13 +153,13 @@ https://www.w3schools.com/tags/default.asp
     <title>Page Title</title>
 
     <style>
-        .text-header2 {
-            color: red;
-        }
+      .text-header2 {
+        color: red;
+      }
     </style>
   </head>
   <body>
-      <h2 class="text-header2">Heading 2</h2>
+    <h2 class="text-header2">Heading 2</h2>
   </body>
 </html>
 ```
@@ -175,7 +174,7 @@ https://www.w3schools.com/tags/default.asp
     <title>Page Title</title>
   </head>
   <body>
-      <h3 style="color: cadetblue;">Heading 3</h3>
+    <h3 style="color: cadetblue;">Heading 3</h3>
   </body>
 </html>
 ```
@@ -184,7 +183,7 @@ https://www.w3schools.com/tags/default.asp
 
 ```css
 [selector] {
-    property: value;
+  property: value;
 }
 ```
 
@@ -196,7 +195,7 @@ https://www.w3schools.com/tags/default.asp
 
 ```css
 .text-header1 {
-    color: green;
+  color: green;
 }
 ```
 
@@ -210,7 +209,8 @@ https://www.w3schools.com/tags/default.asp
 
 ```css
 #text-header4 {
-    color: orange;
+  color: #000000;
+  text-decoration: underline;
 }
 ```
 
@@ -222,7 +222,7 @@ https://www.w3schools.com/tags/default.asp
 
 ```css
 h5 {
-    color: yellow;
+  color: yellow;
 }
 ```
 
@@ -234,27 +234,29 @@ h5 {
 
 ```css
 input[name="username"] {
-  background: red;
+  background: #d6d1d1;;
 }
 ```
 
 ```html
 <label for="username">username: </label>
-<input type="text" id="username" name="username" placeholder="Enter your username" />
+<input
+  type="text"
+  id="username"
+  name="username"
+  placeholder="Enter your username"
+/>
 ```
 
 ### Properties ทั้งหมด
 
 https://www.w3schools.com/cssref/default.asp
 
-
 ## 3. Javascript
 
 เป็นภาษาคอมพิวเตอร์ สามารถนำมาใช้งานร่วมกับ HTML เพื่อให้เว็บไซต์สามารถตอบสนองผู้ใช้งานได้มากขึ้น ในปัจจุบัน Javascript ได้รับความนิยมอย่างสูง เพราะสามารถนำไปพัฒนา Server Side, Mobile, Desktop และอื่นๆ
 
-
 โค้ดของ Javascript สามารถทำงานใน HTML ได้ก็ต่อเมื่อ
-
 
 1. ใช้ Tag `<script></script>`
 
@@ -266,9 +268,9 @@ https://www.w3schools.com/cssref/default.asp
     <title>Page Title</title>
   </head>
   <body>
-      <script>
-          document.write("Hello World");
-      </script>
+    <script>
+      document.write("Hello World");
+    </script>
   </body>
 </html>
 ```
@@ -283,12 +285,13 @@ https://www.w3schools.com/cssref/default.asp
     <title>Page Title</title>
   </head>
   <body>
-      <script src="js/sample.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
 ```
 
-ไฟล์ `/js/sample.js`
+ไฟล์ `/js/main.js`
+
 ```js
 document.write("Hi");
 ```
@@ -301,36 +304,47 @@ document.write("Hi");
 
 ### Syntax Javascript
 
+#### `Comment`
+
+```js
+// text
+
+/*
+  text
+  text
+/*
+```
+
 #### `Variables` (ตัวแปร)
 
 keyword สำหรับประกาศตัวแปรใน Javascript มีอยู่ 3 เภท ได้แก่ `var`, `let` และ `const` (ตัวแปรแบบ constant)
 
-
 ```js
-var notbook = 'Asus';
-let tablet = 'IPad';
-const desktop = 'Dell';
+var notbook = "Asus";
+let tablet = "IPad";
+const desktop = "Dell";
 
 console.log(notbook);
 console.log(tablet);
 console.log(desktop);
 ```
 
->**คำแนะนำ:**
+> **คำแนะนำ:**
 >
-> * หลักการตั้งชื่อตัวแปร ให้ขึ้นต้นด้วยตัวอักษรพิมพ์เล็ก และถ้าหากมี 2 คำใช้คำถัดไปขึ้นด้วยตัวพิมพ์ใหญ่ เช่น (phoneColor)
+> - หลักการตั้งชื่อตัวแปร ให้ขึ้นต้นด้วยตัวอักษรพิมพ์เล็ก และถ้าหากมี 2 คำใช้คำถัดไปขึ้นด้วยตัวพิมพ์ใหญ่ เช่น (phoneColor)
 >
-> * Javascript ES2016 ขึ้นไป ให้ใช้ let และ const เป็นหลัก
+> - Javascript ES2016 ขึ้นไป ให้ใช้ let และ const เป็นหลัก
 >
-> * "let" ถ้าตั้งชื่อตัวแปรซ้ำจะ Error
+> - "let" ถ้าตั้งชื่อตัวแปรซ้ำจะ Error
 
 ความแตกต่างระหว่าง var และ let คือ 'var' สามารถเรียกใช้งานนอก block ได้ แต่ 'let' ไม่ได้
 
-ตัวอย่าง: 
+ตัวอย่าง:
+
 ```js
 if (true) {
-  var a1 = 'cat';
-  let a2 = 'rat';
+  var a1 = "cat";
+  let a2 = "rat";
 }
 
 console.log(a1);
@@ -342,10 +356,10 @@ console.log(a2);
 1. `String` --> 'hello', "hello", `hello`
 
 ```js
-let str = 'goku';
+let str = "goku";
 
-console.log('var str is ' + str);
-console.log('var str type is', typeof str);
+console.log("var str is " + str);
+console.log("var str type is", typeof str);
 ```
 
 2. `Number` --> 5, 6.01
@@ -353,8 +367,8 @@ console.log('var str type is', typeof str);
 ```js
 let num = 12345;
 
-console.log('var num is', num);
-console.log('var num type is', typeof num);
+console.log("var num is", num);
+console.log("var num type is", typeof num);
 ```
 
 3. `Boolean` --> true / false
@@ -362,39 +376,39 @@ console.log('var num type is', typeof num);
 ```js
 let bool = true;
 
-console.log('var bool is', bool);
-console.log('var bool type is', typeof bool);
+console.log("var bool is", bool);
+console.log("var bool type is", typeof bool);
 ```
 
 4. `Object` --> {}, []
 
 ```js
 let obj = {
-    name: 'honda',
-    color: 'white'
+  name: "honda",
+  color: "white",
 };
 
-console.log('var obj is', obj);
-console.log('var obj type is', typeof obj);
+console.log("var obj is", obj);
+console.log("var obj type is", typeof obj);
 
-console.log('car name', obj.name);
-console.log('car color', obj.color);
+console.log("car name", obj.name);
+console.log("car color", obj.color);
 ```
 
 Array ใน Javasript จะจัดอยู่ในประเภทข้อมูล Object
 
 ```js
-let arr = ['red', 'black', 'green'];
+let arr = ["red", "black", "green"];
 
-console.log('var arr is', arr);
-console.log('var arr type is', typeof arr);
+console.log("var arr is", arr);
+console.log("var arr type is", typeof arr);
 
 // check ว่าเป็น object แบบ array
-console.log('var arr type is Array', arr instanceof Array);
+console.log("var arr type is Array", arr instanceof Array);
 
 console.log(arr[0]);
 
-arr.push('orange');
+arr.push("orange");
 console.log(arr);
 ```
 
@@ -403,10 +417,10 @@ console.log(arr);
 ##### 1 เชื่อมข้อความ
 
 ```js
-console.log('Hello' + ' World'); // => Hello World
+console.log("Hello" + " World"); // => Hello World
 ```
 
-##### 2 บวก (+), ลบ (-), คูณ (*), หาร (/)
+##### 2 บวก (+), ลบ (-), คูณ (\*), หาร (/)
 
 ```js
 // ((1 บวก 1) คูณ 10) หาร 10
@@ -429,60 +443,66 @@ console.log(n1); // => 9
 console.log(n1); // => 8
 ```
 
-
 ##### 4 Assignment
 
 ```js
 let n2 = 1;
 
 // เอาข้อมูลเดิมใน 'n2' + 1 และเปลียนค่า
-n2 += 1;
-console.log(n2); // => 2
+n2 += 10;
+console.log(n2); // => 11
 
 // เอาข้อมูลเดิมใน 'n2' - 1 และเปลียนค่า
-n2 -= 1;
-console.log(n2); // => 1
+n2 -= 3;
+console.log(n2); // => 8
 ```
 
 ##### 5 เปรียบเทียบ
 
 เท่ากับ
+
 ```js
 console.log(1 == 1); // => true
 ```
 
 เท่ากับและดูประเภทข้อมูล
+
 ```js
 console.log(1 === "1"); // => false
 ```
 
 ไม่เท่ากับ
+
 ```js
 console.log(1 != 2); // => true
 ```
 
 ไม่เท่ากับและดูประเภทข้อมูล
+
 ```js
 console.log(2 !== "2"); // => true
 ```
 
 มากกว่า (>)
+
 ```js
 console.log(2 > 1); // => true
 ```
 
 มากกว่าหรือเท่ากับ (>=)
+
 ```js
 console.log(2 >= 1); // => true
 ```
 
-
 น้อยกว่า (<)
+
 ```js
 console.log(1 < 2); // => true
 ```
 
 น้อยกว่าหรือเท่ากับ (<=)
+
 ```js
 console.log(2 <= 2); // => true
 ```
@@ -490,16 +510,19 @@ console.log(2 <= 2); // => true
 ##### Logical
 
 not (!) คือ ไม่เท่ากับ หรือ ตรงกันข้าม
+
 ```js
 console.log(!true); // => false
 ```
 
 and (&&) คือ ด้านหน้าและหลัง && ต้องมีค่าเป็น true จึงมีค่าเท่ากับ true
+
 ```js
 console.log(true && true); // => true
 ```
 
 or (||) คือ ด้านหน้าหรือหลัง || ต้องมีค่าเป็น true จึงมีค่าเท่ากับ true
+
 ```js
 console.log(false || true); // => true
 ```
@@ -513,12 +536,14 @@ console.log(false || true); // => true
 ##### If-else
 
 ```js
+let score = 61;
+
 if (score == 50) {
-    console.log('score is 50');
+  console.log("score is 50");
 } else if (score > 60) {
-    console.log('score greater than 50');
+  console.log("score greater than 50");
 } else {
-    console.log('score is not 50');
+  console.log("score is not 50");
 }
 ```
 
@@ -544,7 +569,7 @@ switch (name) {
 
 > **คำแนะนำ:**
 >
->เหมาะกับเงื่อนไขที่ไม่ซับซ้อบ
+> เหมาะกับเงื่อนไขที่ไม่ซับซ้อบ
 
 ##### ใช้เครื่องหมาย Operator
 
@@ -558,11 +583,11 @@ console.log(n < 2 ? "n less than 2" : "n greather than or equal 2");
 
 > **คำแนะนำ:**
 >
-> * For: ใช้งานเมื่อรู้จำนวนครั้งที่จะวนซ้ำ
+> - For: ใช้งานเมื่อรู้จำนวนครั้งที่จะวนซ้ำ
 >
-> * White: ใช้งานเมื่อไม่รู้จำนวนครั้งที่จะวนซ้ำ
+> - White: ใช้งานเมื่อไม่รู้จำนวนครั้งที่จะวนซ้ำ
 >
-> * Do-white: ไม่รู้จำนวนครั้งที่จะวนซ้ำ โดยทำก่อน 1 ครั้ง แล้วเช็กเงื่อนไข
+> - Do-white: ไม่รู้จำนวนครั้งที่จะวนซ้ำ โดยทำก่อน 1 ครั้ง แล้วเช็กเงื่อนไข
 
 ##### For
 
@@ -592,7 +617,6 @@ do {
 
   c += 1;
 } while (c < 5);
-
 ```
 
 ##### การนำไปใช้งานกับ Array
@@ -602,11 +626,12 @@ let cars = ["honda", "toyota", "bmw", "nisson"];
 ```
 
 ตัวอย่างที่ 1: ใช้ for แบบดังเดิม
+
 ```js
 for (let index = 0; index < cars.length; index++) {
-    let car = cars[index];
+  let car = cars[index];
 
-    console.log(car);   
+  console.log(car);
 }
 ```
 
@@ -614,9 +639,9 @@ for (let index = 0; index < cars.length; index++) {
 
 ```js
 for (let key in cars) {
-    let car = cars[key];
+  let car = cars[key];
 
-    console.log(car);
+  console.log(car);
 }
 ```
 
@@ -624,7 +649,7 @@ for (let key in cars) {
 
 ```js
 for (let object of collection) {
-    console.log(object);
+  console.log(object);
 }
 ```
 
@@ -646,10 +671,10 @@ cars.forEach(function (car) {
 
 ```js
 function say() {
-  return message;
+  console.log('Hello World');
 }
 
-console.log(say());
+say();
 ```
 
 ส่ง Parameter ไปยัง function
@@ -693,12 +718,12 @@ function sayPromise(message) {
 เรียกใช้งานแบบ Asynchronous
 
 ```js
-sayPromise('hey')
-  .then(result => {
-      console.log(result);
+sayPromise("hey")
+  .then((result) => {
+    console.log(result);
   })
-  .catch(error => {
-      console.log(error);
+  .catch((error) => {
+    console.log(error);
   });
 ```
 
@@ -732,7 +757,7 @@ let Car = {
   // Methods
   show() {
     console.log(this.name, "color", this.color);
-  }
+  },
 };
 
 console.log(Car.name);
@@ -782,7 +807,7 @@ iphone.show();
 >
 > ในส่วนของการเขียนโปรแกรมแบบ OOP เราจะไปลงลึกกันใน Typescript เพราะในภาษา Javascript ยังขาดพวก Visibility, Interface, Abstract และอื่นๆ
 >
-> ถ้าหากสนใจ OOP ใน Javascript สามารถเข้าไปศึกษาได้จาก 
+> ถ้าหากสนใจ OOP ใน Javascript สามารถเข้าไปศึกษาได้จาก
 >
 > https://www.w3schools.com/js/js_class_intro.asp
 >
@@ -872,7 +897,7 @@ npm install lodash
 const _ = require("lodash");
 const showMessage = require("./showMessage");
 
-let score = '99';
+let score = "99";
 
 if (!_.isNumber(score)) {
   console.log('"score" must be a Number');
@@ -891,7 +916,6 @@ if (!_.isNumber(score)) {
 }
 ```
 
-
 ## 5. Typescript
 
 เป็น Superset ของ JavaScript (หมายความว่าสามารถใช้ทุก feature ของ JavaScript ได้เลย) โดยรูปแบบโค้ดของ Typescript จะมีความคลายกับ Javascript ต่างกันตรงที่มี Type ข้อมูล และยังมีคุณสมบัตืของการเขียนโปรแกรมแบบ OOP มากกว่า Javascript โดยสามารถศึกษาข้อมูลเพิ่มเติมได้จาก https://www.typescriptlang.org
@@ -908,21 +932,25 @@ $ npx tsc init
 ### Types
 
 #### `String`
+
 ```ts
 let fullName: string = `Bob Bobbington`;
 ```
 
 #### `Number`
+
 ```ts
 let age: number = 37;
 ```
 
 #### `Boolean`
+
 ```ts
 let isDone: boolean = false;
 ```
 
 #### `Array`
+
 ```ts
 let list: number[] = [1, 2, 3];
 ```
@@ -932,17 +960,20 @@ let list: Array<number> = [1, 2, 3];
 ```
 
 #### `Object`
+
 ```ts
 let o: object = {};
 let o2: { name: string } = { name: "gg" };
 ```
 
 #### `Tuple`
+
 ```ts
 let x: [string, number] = ["hello", 10];
 ```
 
 #### `Enum`
+
 ```ts
 enum Color {
   Red,
@@ -958,13 +989,14 @@ let cc: "a" | "b" | "c" = "a";
 ```
 
 #### `Any`
+
 ```ts
 let looselyTyped: any = 4;
 ```
 
 สามารถศึกษา Types อื่นๆเพิ่มเติ่มได้จาก https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean
 
-### Custom Types 
+### Custom Types
 
 ```ts
 type Car = {
@@ -997,7 +1029,7 @@ return type default ของ function คือ any
 
 ```ts
 function sayHello(message: string): void {
-    console.log(message);
+  console.log(message);
 }
 ```
 
@@ -1029,10 +1061,9 @@ function getCar(): object {
 
 &nbsp;
 
-**ตัวอย่าง** Class Person(คน) 
+**ตัวอย่าง** Class Person(คน)
 
-**Properties:**  
-
+**Properties:**\
 <span>+</span> firstname\
 <span>+</span> lastname\
 <span>+</span> age\
@@ -1040,26 +1071,29 @@ function getCar(): object {
 <span>+</span> isWalking (protected)\
 <span>+</span> message (static)
 
-**constructor:** รับ Parameter --> firstname, lastname, age, isWalking
+**Constructor:** รับ Parameter --> firstname, lastname, age, isWalking
 
-**Method:**
-
+**Method:**\
 <span>+</span> walk\
 <span>+</span> show\
 <span>+</span> show (static)\
 <span>+</span> showx (static)
-
 
 ```ts
 class Person {
   public firstname: string;
   public lastname: string;
   age: number;
-  private secretMsg: string = 'Hello'; // ข้อความลับที่ไม่อยากให้ภายนอก class เรียกใช้งานได้
+  private secretMsg: string = "Hello"; // ข้อความลับที่ไม่อยากให้ภายนอก class เรียกใช้งานได้
   protected isWalking: boolean = false; // สถานะการเดิน
-  static message: string = 'Hi';
+  static message: string = "Hi";
 
-  constructor(firstname: string, lastname: string, age: number, isWalking:boolean = false) {
+  constructor(
+    firstname: string,
+    lastname: string,
+    age: number,
+    isWalking: boolean = false
+  ) {
     this.firstname = firstname;
     this.lastname = lastname;
     this.age = age;
@@ -1069,39 +1103,39 @@ class Person {
   // เดิน ซึ่งเมื่อเดินแล้วก็จะต้องเซต isWalking เป็น true
   public walk() {
     this.isWalking = true;
-    console.log('walking.');
+    console.log("walking.");
   }
 
   // แสดงข้อมูล
   public show(): void {
-    console.log('firstname:', this.firstname);
-    console.log('lastname:', this.lastname);
-    console.log('age:', this.age);
-    console.log('walking:', this.isWalking ? 'Yes': 'No');
-    console.log('secret message:', this.secretMsg);
+    console.log("firstname:", this.firstname);
+    console.log("lastname:", this.lastname);
+    console.log("age:", this.age);
+    console.log("walking:", this.isWalking ? "Yes" : "No");
+    console.log("secret message:", this.secretMsg);
   }
 
   // แสดงข้อมูล แบบ static
   public static show(
-    firstname: string, 
-    lastname: string, 
-    age: number, 
-    isWalking: boolean = false, 
-    secretMsg: string = 'Hello'
+    firstname: string,
+    lastname: string,
+    age: number,
+    isWalking: boolean = false,
+    secretMsg: string = "Hello"
   ): void {
-    console.log('firstname:', firstname);
-    console.log('lastname:', lastname);
-    console.log('age:', age);
-    console.log('walking:', isWalking ? 'Yes': 'No');
-    console.log('secret message:', secretMsg);
+    console.log("firstname:", firstname);
+    console.log("lastname:", lastname);
+    console.log("age:", age);
+    console.log("walking:", isWalking ? "Yes" : "No");
+    console.log("secret message:", secretMsg);
   }
 
   // แสดงข้อมูล แบบ static และเรียกใช้งาน method show ใน Class ตัวเอง
   public static showx(
     firstname: string,
-    lastname: string, 
-    age: number, 
-    isWalking:boolean = false
+    lastname: string,
+    age: number,
+    isWalking: boolean = false
   ): void {
     let person = new Person(firstname, lastname, age, isWalking);
     person.show();
@@ -1109,7 +1143,7 @@ class Person {
 }
 
 // เรียกใช้งาน class
-let tomus = new Person('Tomus', 'k', 12);
+let tomus = new Person("Tomus", "k", 12);
 
 // ดึงข้อมูลใน propertys
 console.log(tomus.firstname);
@@ -1120,7 +1154,7 @@ console.log(tomus.age);
 // console.log(tomus.isWalking); // Error เพราะ visibility เป็น protected
 
 // เซตค่าใน propertys
-tomus.firstname = 'Tom';
+tomus.firstname = "Tom";
 console.log(tomus.firstname);
 
 // เรียกใช้งาน methods
@@ -1131,6 +1165,111 @@ tomus.walk();
 console.log(Person.message);
 
 // เรียกใช้งาน static methods
-Person.show('Sara', 't', 15, true);
-Person.showx('Silva', 'x', 13);
+Person.show("Sara", "t", 15, true);
+Person.showx("Silva", "x", 13);
+```
+
+#### Inheritance (การสืบทอดคุณสมบัติ)
+
+```ts
+class Animal {
+  public name: string = "";
+  public color: string = "";
+
+  private s: string = "#=@";
+
+  protected isWalking: boolean = false;
+
+  constructor() {
+    console.log('initialed class "Animal"');
+  }
+
+  public walk(): void {
+    this.isWalking = true;
+    console.log(this.color + " " + this.name + " is walking.");
+  }
+
+  public show(): void {
+    console.log("name:", this.name);
+    console.log("color:", this.color);
+    console.log("walking:", this.isWalking);
+  }
+}
+
+class Cat extends Animal {
+  public name: string = "cat";
+
+  constructor(color: string) {
+    super(); // เรียกใช้งาน constructor ของ class parent
+
+    this.color = color;
+  }
+
+  checkWalking() {
+    console.log("wolking status: " + this.isWalking ? "Yes" : "No");
+  }
+}
+
+let cat = new Cat("Black");
+console.log(cat.name);
+console.log(cat.color);
+cat.walk();
+cat.checkWalking();
+
+let rat = new Animal();
+rat.name = "rat";
+rat.color = "white";
+rat.walk();
+```
+
+#### Interface (แม่แบบ)
+
+เป็นแม่แบบ Class ถ้าหากมี Propertys หรือ Methods ไม่ตรงกับแม่แบบจะเกิด Error การเรียกใช้งาน Interface ใน Class ใช้ keyword `implements`
+
+```ts
+interface IPhone {
+  name: string;
+  color: string;
+
+  playMusic(name: string): void;
+}
+
+class IPhone5s implements IPhone {
+  name = "iPhone 5s";
+  color = "black";
+
+  playMusic(name: string) {
+    console.log(this.name + "play song name " + name);
+  }
+
+  show() {
+    console.log("name:", this.name);
+    console.log("color:", this.color);
+  }
+}
+
+let iphone5s = new IPhone5s();
+iphone5s.playMusic("Hello");
+iphone5s.show();
+```
+
+#### Abstract (แม่แบบที่สามารถใส่โค้ด Logic ได้)
+
+```ts
+abstract class Base {
+  abstract getName(): string;
+
+  printName() {
+    console.log("Hello, " + this.getName());
+  }
+}
+
+class Derived extends Base {
+  getName() {
+    return "world";
+  }
+}
+
+let d = new Derived();
+d.printName();
 ```

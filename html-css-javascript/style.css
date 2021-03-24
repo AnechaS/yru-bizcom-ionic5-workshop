@@ -1,0 +1,16 @@
+.text-header1 {
+  color: skyblue;
+}
+
+#text-header4 {
+  color: #000000;
+  text-decoration: underline;
+}
+
+h5 {
+  color: #b3e9db;
+}
+
+input[name="username"] {
+  background: #d6d1d1;
+}
