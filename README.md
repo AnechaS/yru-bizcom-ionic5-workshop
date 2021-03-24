@@ -852,7 +852,7 @@ if (score >= 80) {
 
 ### ใช้งาน Package ใน npm
 
-เซตอัปโดยใช้คำสั่ง
+สร้างไฟล์ package.json โดยใช้คำสั่ง
 
 ```bash
 $ npm init
@@ -893,3 +893,244 @@ if (!_.isNumber(score)) {
 
 
 ## 5. Typescript
+
+เป็น Superset ของ JavaScript (หมายความว่าสามารถใช้ทุก feature ของ JavaScript ได้เลย) โดยรูปแบบโค้ดของ Typescript จะมีความคลายกับ Javascript ต่างกันตรงที่มี Type ข้อมูล และยังมีคุณสมบัตืของการเขียนโปรแกรมแบบ OOP มากกว่า Javascript โดยสามารถศึกษาข้อมูลเพิ่มเติมได้จาก https://www.typescriptlang.org
+
+### ติดตั้ง Typescript ลงในโปรเจค
+
+ก่อนที่จะติดตั้ง typescript ลงในโปรเจค อย่างลื่มสร้างไฟล์ package.json โดยใช้คำสั่ง `npm init` ก่อนนะครับ
+
+```bash
+$ npm install typescript --save-dev
+$ npx tsc init
+```
+
+### Types
+
+#### `String`
+```ts
+let fullName: string = `Bob Bobbington`;
+```
+
+#### `Number`
+```ts
+let age: number = 37;
+```
+
+#### `Boolean`
+```ts
+let isDone: boolean = false;
+```
+
+#### `Array`
+```ts
+let list: number[] = [1, 2, 3];
+```
+
+```ts
+let list: Array<number> = [1, 2, 3];
+```
+
+#### `Object`
+```ts
+let o: object = {};
+let o2: { name: string } = { name: "gg" };
+```
+
+#### `Tuple`
+```ts
+let x: [string, number] = ["hello", 10];
+```
+
+#### `Enum`
+```ts
+enum Color {
+  Red,
+  Green,
+  Blue,
+}
+
+let c: Color = Color.Blue;
+```
+
+```ts
+let cc: "a" | "b" | "c" = "a";
+```
+
+#### `Any`
+```ts
+let looselyTyped: any = 4;
+```
+
+สามารถศึกษา Types อื่นๆเพิ่มเติ่มได้จาก https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean
+
+### Custom Types 
+
+```ts
+type Car = {
+  name: string;
+  color: string;
+  price?: number;
+};
+
+let car: Car = {
+  name: "honda",
+  color: "red",
+};
+```
+
+```ts
+interface Phone {
+  name: string;
+  color: string;
+}
+
+let iphone: Phone = {
+  name: "iphone 6",
+  color: "black",
+};
+```
+
+### Functional
+
+return type default ของ function คือ any
+
+```ts
+function sayHello(message: string): void {
+    console.log(message);
+}
+```
+
+```ts
+function getCar(): object {
+  return {
+    name: "nisson",
+    color: "white",
+  };
+}
+```
+
+### Classes
+
+เป็นซอสโค้ดที่เรามองว่าเป็น Object (วัตถุ) โดย Class ประกอบไปด้วย Properties (คุณสมบัติ) และ Methods (ดำเนินการ)
+
+<span>+</span> **Properties:** ข้อสั่งเกตคือ ประกาศคลายกับตัวแปล (name = value)\
+<span>+</span> **Methods:** ข้อสั่งเกตคือ ประกาศคลายกับฟังก์ชัน (show() {})
+
+**Visibility** คือ การมองเห็น Properties หรือ Methods ใน Class นั้น
+
+<span>+</span> **public:** ภายนอกใช้งานได้\
+<span>+</span> **private:** เรียกใช้งานได้เฉพาะภายใน class ตัวเอง\
+<span>+</span> **protected:** เรียกใช้งานได้เฉพาะภายใน class ตัวเอง และ class ที่สืบทอด
+
+**Constructor** คือ Method แรกเริ่มที่ทำงานเมื่อเราประการ new ClassName()
+
+**Static** คือ keyword ที่ทำให้เราสามารถเรียกใช้ Properties หรือ Methods ได้ทันทีโดยไม่ต้องประกาศ new ClassName()
+
+&nbsp;
+
+**ตัวอย่าง** Class Person(คน) 
+
+**Properties:**  
+
+<span>+</span> firstname\
+<span>+</span> lastname\
+<span>+</span> age\
+<span>+</span> secretMsg (private)\
+<span>+</span> isWalking (protected)\
+<span>+</span> message (static)
+
+**constructor:** รับ Parameter --> firstname, lastname, age, isWalking
+
+**Method:**
+
+<span>+</span> walk\
+<span>+</span> show\
+<span>+</span> show (static)\
+<span>+</span> showx (static)
+
+
+```ts
+class Person {
+  public firstname: string;
+  public lastname: string;
+  age: number;
+  private secretMsg: string = 'Hello'; // ข้อความลับที่ไม่อยากให้ภายนอก class เรียกใช้งานได้
+  protected isWalking: boolean = false; // สถานะการเดิน
+  static message: string = 'Hi';
+
+  constructor(firstname: string, lastname: string, age: number, isWalking:boolean = false) {
+    this.firstname = firstname;
+    this.lastname = lastname;
+    this.age = age;
+    this.isWalking = isWalking;
+  }
+
+  // เดิน ซึ่งเมื่อเดินแล้วก็จะต้องเซต isWalking เป็น true
+  public walk() {
+    this.isWalking = true;
+    console.log('walking.');
+  }
+
+  // แสดงข้อมูล
+  public show(): void {
+    console.log('firstname:', this.firstname);
+    console.log('lastname:', this.lastname);
+    console.log('age:', this.age);
+    console.log('walking:', this.isWalking ? 'Yes': 'No');
+    console.log('secret message:', this.secretMsg);
+  }
+
+  // แสดงข้อมูล แบบ static
+  public static show(
+    firstname: string, 
+    lastname: string, 
+    age: number, 
+    isWalking: boolean = false, 
+    secretMsg: string = 'Hello'
+  ): void {
+    console.log('firstname:', firstname);
+    console.log('lastname:', lastname);
+    console.log('age:', age);
+    console.log('walking:', isWalking ? 'Yes': 'No');
+    console.log('secret message:', secretMsg);
+  }
+
+  // แสดงข้อมูล แบบ static และเรียกใช้งาน method show ใน Class ตัวเอง
+  public static showx(
+    firstname: string,
+    lastname: string, 
+    age: number, 
+    isWalking:boolean = false
+  ): void {
+    let person = new Person(firstname, lastname, age, isWalking);
+    person.show();
+  }
+}
+
+// เรียกใช้งาน class
+let tomus = new Person('Tomus', 'k', 12);
+
+// ดึงข้อมูลใน propertys
+console.log(tomus.firstname);
+console.log(tomus.lastname);
+console.log(tomus.age);
+
+// console.log(tomus.secretMsg); // Error เพราะ visibility เป็น private
+// console.log(tomus.isWalking); // Error เพราะ visibility เป็น protected
+
+// เซตค่าใน propertys
+tomus.firstname = 'Tom';
+console.log(tomus.firstname);
+
+// เรียกใช้งาน methods
+tomus.show();
+tomus.walk();
+
+// เรียกใช้งาน static property
+console.log(Person.message);
+
+// เรียกใช้งาน static methods
+Person.show('Sara', 't', 15, true);
+Person.showx('Silva', 'x', 13);
+```

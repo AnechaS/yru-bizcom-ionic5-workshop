@@ -38,7 +38,7 @@ let looselyTyped: any = 4;
 type Car = {
   name: string;
   color: string;
-  price?: number
+  price?: number;
 };
 
 let car: Car = {
