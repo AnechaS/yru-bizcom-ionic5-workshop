@@ -141,13 +141,13 @@ $ java -version
 
 ## ทดสอบ Run บน Emulator
 
-## 1. Build แอป Ionic
+### 1. Build แอป Ionic
 
 ```bash
 $ ionic build
 ```
 
-## 2. Generate native โปรเจค
+### 2. Generate native โปรเจค
 
 ```bash
 $ ionic capacitor add android
@@ -155,17 +155,17 @@ $ ionic capacitor add android
 
 **หมายเหตุ:** หากมีโฟลเดอร์ android ในโปรเจค หรือ เคย Run คำสั่งนี้ไปแล้ว ให้ข้ามขั้นตอนนี้ไปได้
 
-## 3. เซ็ต Package ID.
+### 3. เซ็ต Package ID.
 
 เปิดไฟล์ `capacitor.config.json` และแก้ไขใน property `appId`
 
-## 4. คัดลอกโฟล์เดอร์ `www` ไปยัง native โปรเจค
+### 4. คัดลอกโฟล์เดอร์ `www` ไปยัง native โปรเจค
 
 ```bash
 $ ionic capacitor copy android
 ```
 
-## 5. เปิด Android Studio
+### 5. เปิด Android Studio
 
 ```bash
 $ npx capacitor open android
