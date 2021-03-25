@@ -6,7 +6,7 @@
 
 อ้างอิงจาก: https://ionicframework.com/docs
 
-Ionic Framework เป็นชุดเครื่องมือ UI แบบโอเพนซอร์สสำหรับการสร้างแอปมือถือและเดสก์ท็อปคุณภาพสูง โดยใช้เทคโนโลยีเว็บ - HTML, CSS และ JavaScript สามารถใช้งานรวมกับเฟรมเวิร์กยอดนิยม เช่น Angular, React และ Vue
+Ionic Framework เป็นชุดเครื่องมือ UI แบบโอเพ่นซอร์สสำหรับการสร้างแอปมือถือและเดสก์ท็อปคุณภาพสูง โดยใช้เทคโนโลยีเว็บ - HTML, CSS และ JavaScript สามารถใช้งานรวมกับเฟรมเวิร์กยอดนิยม เช่น Angular, React และ Vue
 
 
 แอปพลิเคชันที่พัฒนาด้วย Ionic จำเป็นต้องใช้ [Capacitor](https://ionicframework.com/docs/reference/glossary#capacitor) หรือ [Cordova](https://ionicframework.com/docs/reference/glossary#cordova) ในการเข้าถึง Native APIs ของแพลตฟอร์มนั้น โดย Workshop นี้เราจะใช้ Capacitor เพราะเป็นเครื่องมือใหม่ที่พัฒนาโดยทีมของ Ionic เอง และยังสามารถนำ Plugin ของ Cordova มาใช้งานร่วมกันได้
