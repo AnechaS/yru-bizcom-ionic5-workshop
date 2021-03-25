@@ -1,10 +1,12 @@
-# พัฒนาโมบายคอสแพลตฟอร์มด้วย Ionic5
+# พัฒนาโมบายคอสแพลตฟอร์มด้วย Ionic Framework
 
-## Ionic คือ ?
+## Ionic Framework คือ ?
 
-เป็น Framework ที่จะทำให้เราสร้าง Hybrid Application (IOS, Android) โดยการพัฒนาเพียงครั้งเดียว
+> **Ionic Framework** is an open source UI toolkit for building performant, high-quality mobile and desktop apps using web technologies — HTML, CSS, and JavaScript — with integrations for popular frameworks like Angular, React, and Vue.
 
-การทำงานของ ionic
+อ้างอิงจาก: https://ionicframework.com/docs
+
+Ionic Framework เป็นชุดเครื่องมือ UI แบบโอเพนซอร์สสำหรับการสร้างแอพมือถือและเดสก์ท็อปคุณภาพสูง โดยใช้เทคโนโลยีเว็บ - HTML, CSS และ JavaScript สามารถใช้งานรวมกับเฟรมเวิร์กยอดนิยม เช่น Angular, React และ Vue
 
 ## พื้นฐานที่ใช้ในการเรียนรู้ Ionic
 
