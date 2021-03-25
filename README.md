@@ -136,30 +136,39 @@ $ java -version
 ```
 
 <br />
-<br />
 
 สามารถดูคู้มือ Ionic ในส่วนนี้ได้ที่ https://ionicframework.com/docs/developing/android
 
-<!-- ## ทดสอบ Build APK
+## ทดสอบ Run บน Emulator
 
-## 1. Generate native โปรเจค
+## 1. Build แอป Ionic
+
+```bash
+$ ionic build
+```
+
+## 2. Generate native โปรเจค
 
 ```bash
 $ ionic capacitor add android
 ```
 
-## 2. เซ็ต Package ID.
+**หมายเหตุ:** หากมีโฟลเดอร์ android ในโปรเจค หรือ เคย Run คำสั่งนี้ไปแล้ว ให้ข้ามขั้นตอนนี้ไปได้
+
+## 3. เซ็ต Package ID.
 
 เปิดไฟล์ `capacitor.config.json` และแก้ไขใน property `appId`
 
-## 3. คัดลอกโฟล์เดอร์ `www` ไปยัง native โปรเจค
+## 4. คัดลอกโฟล์เดอร์ `www` ไปยัง native โปรเจค
 
 ```bash
 $ ionic capacitor copy android
 ```
 
-## 4. เปิด Android Studio
+## 5. เปิด Android Studio
 
 ```bash
 $ npx capacitor open android
-``` -->
+```
+
+เมื่อรันคำสั่งนี้แล้ว จะเจอหน้าต่างของโปรแกรม Android Studio ให้ทำการเลือก Emulator และกดรัน
