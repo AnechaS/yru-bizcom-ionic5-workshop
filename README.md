@@ -43,7 +43,7 @@ $ cd helloworld
 $ ionic serve
 ```
 
-หากรันสำเร็จระบบจะทำการเปิดบราว์เซอร์และพาเราไปยังลิงก์ http://localhost:8100 (หากระบบไม่เปิดบราวเซอร์และพาไปยังลิ้งค์ดังกล่าวอัตโนมัติ ให้ทำการกรอกลิ้งค์ในบราว์เซอร์เอง) ซึ่งจะได้ผลลัพธ์ดังรูป
+หากรันสำเร็จระบบจะทำการเปิดบราว์เซอร์และพาเราไปยังลิงก์ http://localhost:8100 (หากระบบไม่เปิดบราวเซอร์และพาไปยังลิงก์ดังกล่าวอัตโนมัติ ให้ทำการกรอกลิงก์ในบราว์เซอร์เอง) ซึ่งจะได้ผลลัพธ์ดังรูป
 
 <img src=".github/helloworld.png" width="660px">
 
@@ -92,7 +92,7 @@ $ java -version
 
 ![ads-emulator](.github/ads-emulator.png)
 
-ให้ทำการกดปุ่ม + Create Virtual Device... และเลือก Category เป็น Phone เลือก Nexus 4 (หรือรุ่นอื่นๆ ตามความเหมาะสม) จากนั้นกดปุ่ม Next
+ให้ทำการกดปุ่ม + Create Virtual Device... และเลือก Category เป็น Phone เลือก Nexus 5X (หรือรุ่นอื่นๆ ตามความเหมาะสม) จากนั้นกดปุ่ม Next
 ในส่วนของ System Image คือเลือกว่า Emulator ที่สร้างจะเป็น Android เวอร์ชันใด ให้เลือกเวอร์ชัน Q (หรือเวอร์ชันตามความเหมาะสม) จากนั้นกดปุ่ม Next และกดปุ่ม Finish
 
 ### 5. เซต Environment Variables 
@@ -137,9 +137,9 @@ $ java -version
 
 <br />
 
-สามารถดูคู้มือ Ionic ในส่วนนี้ได้ที่ https://ionicframework.com/docs/developing/android
+สามารถดูคู่มือ Ionic ในส่วนนี้ได้ที่ https://ionicframework.com/docs/developing/android
 
-## ทดสอบ Run บน Emulator
+## ทดสอบรันบน Emulator
 
 ### 1. Build แอป Ionic
 
@@ -153,7 +153,7 @@ $ ionic build
 $ ionic capacitor add android
 ```
 
-**หมายเหตุ:** หากมีโฟลเดอร์ android ในโปรเจค หรือ เคย Run คำสั่งนี้แล้ว ให้ข้ามขั้นตอนนี้ไปได้
+**หมายเหตุ:** หากมีโฟลเดอร์ android ในโปรเจค หรือ เคยรันคำสั่งนี้แล้ว ให้ข้ามขั้นตอนนี้ไปได้
 
 ### 3. เซต Package ID.
 
