@@ -19,6 +19,10 @@ Ionic Framework เป็นชุดเครื่องมือ UI แบบ
 4. OOP (Object Oriented Programming)
 5. Web APIs
 
+## แบบทดสอบ
+
+--> [Quiz](https://docs.google.com/forms/d/e/1FAIpQLSc0d-bTy579ypR2zKHjEgF9KUWZhZcAsbfUELb1dYgPcilgZA/viewform?usp=sf_link)
+
 ## เนื้อหา
 
 - [Step-0: Syntax ของ HTML, CSS, Javascript, Typescript](tree/step0)
