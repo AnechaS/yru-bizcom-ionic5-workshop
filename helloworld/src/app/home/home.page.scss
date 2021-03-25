@@ -1,13 +1,7 @@
 .my-text {
-  color: aquamarine;
+  color: #7FFFD4;
 }
 
 .my-text-desc {
   color: var(--ion-color-primary)
 }
-
-:root {
-  --ion-safe-area-top: 20px;
-  --ion-safe-area-bottom: 22px;
-}
-
