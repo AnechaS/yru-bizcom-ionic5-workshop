@@ -21,7 +21,7 @@ Ionic Framework เป็นชุดเครื่องมือ UI แบบ
 
 ## แบบทดสอบ
 
---> [Quiz](https://docs.google.com/forms/d/e/1FAIpQLSc0d-bTy579ypR2zKHjEgF9KUWZhZcAsbfUELb1dYgPcilgZA/viewform?usp=sf_link)
+=> [เริ่มทำแบบทดสอบ](https://docs.google.com/forms/d/e/1FAIpQLSc0d-bTy579ypR2zKHjEgF9KUWZhZcAsbfUELb1dYgPcilgZA/viewform?usp=sf_link)
 
 ## เนื้อหา
 
