@@ -51,7 +51,7 @@
 
 ```scss
 .my-text {
-  color: #2F4F4F;
+  color: #7FFFD4;
 }
 
 .my-text-desc {
