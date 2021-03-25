@@ -153,9 +153,9 @@ $ ionic build
 $ ionic capacitor add android
 ```
 
-**หมายเหตุ:** หากมีโฟลเดอร์ android ในโปรเจค หรือ เคย Run คำสั่งนี้ไปแล้ว ให้ข้ามขั้นตอนนี้ไปได้
+**หมายเหตุ:** หากมีโฟลเดอร์ android ในโปรเจค หรือ เคย Run คำสั่งนี้แล้ว ให้ข้ามขั้นตอนนี้ไปได้
 
-### 3. เซ็ต Package ID.
+### 3. เซต Package ID.
 
 เปิดไฟล์ `capacitor.config.json` และแก้ไขใน property `appId`
 
