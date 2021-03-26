@@ -5,5 +5,52 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <p>{{message}}</p>
+  <!-- Property binding -->
+  <ion-card>
+    <ion-card-content> {{message}} </ion-card-content>
+  </ion-card>
+
+  <!-- Attribute binding  -->
+  <ion-card [color]="colorCard1">
+    <ion-card-content>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+      consectetur fugiat ut beatae nesciunt! Impedit totam enim consequuntur
+      veritatis aperiam fugit quod cupiditate autem ipsum?
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Class binding  -->
+  <ion-card [class.ion-hide]="isHideCard2">
+    <ion-card-content>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. In, est!
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Style binding -->
+  <ion-card [style.background-color]="colorCard3">
+    <ion-card-content>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. In, est!
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Event binding -->
+  <ion-button (click)="onSave()">Save</ion-button>
+
+  <ion-item>
+    <ion-label position="floating">Name</ion-label>
+    <ion-input (ionChange)="onChangeName($event)"></ion-input>
+  </ion-item>
+
+  <!-- Directives -->
+  <!-- ngIf -->
+  <ion-card *ngIf="isShowItem">
+    <ion-card-content> Lorem ipsum dolor sit. </ion-card-content>
+  </ion-card>
+
+  <!-- ngFor -->
+  <ion-card *ngFor="let color of colors">
+    <ion-card-content> {{ color }} </ion-card-content>
+  </ion-card>
+
+  <app-box-message></app-box-message>
 </ion-content>
