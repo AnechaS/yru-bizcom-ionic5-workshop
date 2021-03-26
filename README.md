@@ -6,7 +6,7 @@
 
 ## Property binding
 
-เว็บไซต์สำหรับศึกษา: https://angular.io/guide/property-binding
+เว็บไซต์สำหรับศึกษาเพิ่มเติม: https://angular.io/guide/property-binding
 
 ไฟล์ `src/app/home/home.page.ts`
 
@@ -33,7 +33,7 @@ export class HomePage {
 
 ## Attribute, class, and style bindings
 
-เว็บไซต์สำหรับศึกษา: https://angular.io/guide/attribute-binding
+เว็บไซต์สำหรับศึกษาเพิ่มเติม: https://angular.io/guide/attribute-binding
 
 ไฟล์ `src/app/home/home.page.ts`
 
@@ -81,17 +81,49 @@ export class HomePage {
 
 ## Event binding
 
-เว็บไซต์สำหรับศึกษา: https://angular.io/guide/event-binding
+เว็บไซต์สำหรับศึกษาเพิ่มเติม: https://angular.io/guide/event-binding
+
+ไฟล์ `src/app/home/home.page.ts`
+
+```ts
+...
+export class HomePage {
+
+  ...
+
+  onSave() {
+    console.log('saved');
+  }
+
+  onChangeName(event) {
+    console.log('name is', event.target.value)
+  }
+}
+```
+
+ไฟล์ `src/app/home/home.page.html`
+
+```html
+<ion-content [fullscreen]="true">
+  <ion-button (click)="onSave()">Save</ion-button>
+
+  <ion-item>
+    <ion-label position="floating">Name</ion-label>
+    <ion-input (ionChange)="onChangeName($event)"></ion-input>
+  </ion-item>
+</ion-content>
+```
 
 ## Directives
 
-เว็บไซต์สำหรับศึกษา: https://angular.io/guide/built-in-directives#adding-or-removing-an-element-with-ngif
+เว็บไซต์สำหรับศึกษาเพิ่มเติม: https://angular.io/guide/built-in-directives#adding-or-removing-an-element-with-ngif
 
 ### `*ngIf`
 
 ไฟล์ `src/app/home/home.page.ts`
 
 ```ts
+...
 export class HomePage {
 
   isShowItem = true
@@ -115,11 +147,32 @@ export class HomePage {
 
 ### `*ngFor`
 
+ไฟล์ `src/app/home/home.page.ts`
 
+```ts
+...
+export class HomePage {
+
+  colors = ['black', 'white', 'orange'];
+
+  constructor() {}
+
+}
+```
+
+ไฟล์ `src/app/home/home.page.html`
+
+```html
+<ion-content [fullscreen]="true">
+  <ion-card *ngFor="let color of colors">
+    <ion-card-content> {{ color }} </ion-card-content>
+  </ion-card>
+</ion-content>
+```
 
 ## สร้าง Component
 
-เว็บไซต์สำหรับศึกษา: https://angular.io/tutorial/toh-pt3
+เว็บไซต์สำหรับศึกษาเพิ่มเติม https://angular.io/tutorial/toh-pt3
 
 คำสั่งที่ใช้ในการสร้าง Component
 
