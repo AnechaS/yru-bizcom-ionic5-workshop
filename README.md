@@ -1,4 +1,4 @@
-# Step-3: พื้นฐานของ Angular + Ionic
+# Step-3: พื้นฐานของ Angular + Ionic UI
 
 เว็บไซต์สำหรับศึกษา Angular: https://angular.io/docs
 
