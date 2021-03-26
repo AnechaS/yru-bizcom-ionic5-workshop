@@ -1,6 +1,8 @@
 # Step-3: พื้นฐานของ Angular + Ionic
 
-## โครงสร้างไฟลเดอร์
+เว็บไซต์สำหรับศึกษา Angular: https://angular.io/docs
+
+## โครงสร้างโฟลเดอร์
 
 เว็บไซต์สำหรับศึกษา: https://angular.io/guide/file-structure
 
