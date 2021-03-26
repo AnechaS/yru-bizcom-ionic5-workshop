@@ -1,4 +1,4 @@
-# Step3 พื้นฐานของ Angular + Ionic
+# Step-3: พื้นฐานของ Angular + Ionic
 
 ## Sketch Content
 - Components + Templates
