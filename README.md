@@ -648,8 +648,8 @@ for (let key in cars) {
 ตัวอย่างที่ 3: ใช้ for of
 
 ```js
-for (let object of collection) {
-  console.log(object);
+for (let car of cars) {
+  console.log(cars);
 }
 ```
 
