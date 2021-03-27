@@ -25,8 +25,8 @@ Ionic Framework เป็นชุดเครื่องมือ UI แบบ
 
 ## เนื้อหา
 
-- [Step-0: Syntax ของ HTML, CSS, Javascript, Typescript](/tree/step0)
-- [Step-1: การติดตั้ง](tree/step1)
+- [Step-0: Syntax ของ HTML, CSS, Javascript, Typescript](https://github.com/AnechaS/ionic5-workshop/tree/step0)
+- [Step-1: การติดตั้ง](/AnechaS/ionic5-workshop/tree/step0)
 - [Step-2: Ionic Components](tree/step2)
 - [Step-3: พื้นฐานของ Angular](tree/step3)
 - [Step-4: Navigation](tree/step4)
