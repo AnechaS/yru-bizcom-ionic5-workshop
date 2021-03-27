@@ -8,3 +8,9 @@
 $ cd todo
 $ npm install
 ```
+
+## Run
+
+```bash
+$ ionic serve
+```
