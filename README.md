@@ -26,11 +26,11 @@ Ionic Framework เป็นชุดเครื่องมือ UI แบบ
 ## เนื้อหา
 
 - [Step-0: Syntax ของ HTML, CSS, Javascript, Typescript](https://github.com/AnechaS/ionic5-workshop/tree/step0)
-- [Step-1: การติดตั้ง](/AnechaS/ionic5-workshop/tree/step0)
-- [Step-2: Ionic Components](tree/step2)
-- [Step-3: พื้นฐานของ Angular](tree/step3)
-- [Step-4: Navigation](tree/step4)
-- [Step-5: Native Plugin](tree/step5)
-- [Step-6: Todo App (Part1-Ui)](tree/step6)
-- [Step-7: Todo App (Part2 REST-API)](tree/step7)
+- [Step-1: การติดตั้ง](https://github.com/AnechaS/ionic5-workshop/tree/step1)
+- [Step-2: Ionic Components](https://github.com/AnechaS/ionic5-workshop/tree/step2)
+- [Step-3: พื้นฐานของ Angular](https://github.com/AnechaS/ionic5-workshop/tree/step3)
+- [Step-4: Navigation](https://github.com/AnechaS/ionic5-workshop/tree/step4)
+- [Step-5: Native Plugin](https://github.com/AnechaS/ionic5-workshop/tree/step5)
+- [Step-6: Todo App (Part1-Ui)](https://github.com/AnechaS/ionic5-workshop/tree/step6)
+- [Step-7: Todo App (Part2 REST-API)](https://github.com/AnechaS/ionic5-workshop/tree/step7)
 
