@@ -1,7 +1,7 @@
 # Step-1: UI Components
 
 เว็บไซต์สำหรับศึกษา: https://ionicframework.com/docs/components \
-<span>=> </span>[Demo](https://stackblitz.com/github/xoriwkyvn?file=src/app/app.component.ts)
+<span>=> </span>[Demo](https://stackblitz.com/github/AnechaS/ionic-workshop/tree/step2/helloworld)
 
 ลองก๊อบปี้โค้ดจากลิงก์ด้านบน แล้วนำมาวางในไฟล์ `src/app/home/home.page.html`\
 ตัวอย่าง:
