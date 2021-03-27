@@ -2,7 +2,7 @@
 
 เว็บไซต์สำหรับศึกษา: https://ionicframework.com/docs/components
 
-Live Deme: [StackBlitz](https://stackblitz.com/github/xoriwkyvn?file=src/app/app.component.ts)
+[Demo](https://stackblitz.com/github/xoriwkyvn?file=src/app/app.component.ts)
 
 ลองก๊อบปี้โค้ดจากลิงก์ด้านบน แล้วนำมาวางในไฟล์ `src/app/home/home.page.html`\
 ตัวอย่าง:
