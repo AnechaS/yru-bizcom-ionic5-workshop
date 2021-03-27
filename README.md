@@ -1,4 +1,4 @@
-# Step-1: UI Components
+# Step-2: UI Components
 
 เว็บไซต์สำหรับศึกษา: https://ionicframework.com/docs/components \
 <span>=> </span>[Demo](https://stackblitz.com/github/AnechaS/ionic-workshop/tree/step2/helloworld)
